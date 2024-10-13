@@ -1,0 +1,13 @@
+
+
+body{
+	background: linear-gradient(#A9A9A9, #DCDCDC, #B0C4DE);
+}
+
+.contianer{
+	background:  linear-gradient(35deg,red,pink,orange);
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	grid-template-areas: content;
+	
+}

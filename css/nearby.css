@@ -1,0 +1,131 @@
+    img[src="../images/restaurant.jpg"]
+    {
+        max-height: 300px;
+        opacity: .8;
+        font-size: 36px;
+    }
+    img[src="../images/bus.jpg"]
+    {
+        max-height: 300px;
+        opacity: .8;
+    }
+    img[src="../images/simba.jpg"]
+    {
+        max-height: 300px;
+        opacity: .8;
+        color: red !important;
+    }
+
+    .row
+    {
+        margin: 0px 0px;
+    }
+
+    .maindiv
+    {
+         padding-top: 30px;
+          padding-bottom: 30px;
+          margin-bottom: 30px;
+          color: inherit;
+          background-color: #eee;
+    }
+
+    .jumbo-img
+    {
+        background-image: url('bus.jpg');
+        margin-bottom: 0px !important;
+        background-size: cover;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    .jumbo-img h1
+    {
+        justify-content: center;
+        color: red;
+        font-family: monospace;
+        word-spacing:-10px !important;
+        letter-spacing: -5px !important;
+    }
+    .navbar
+    {
+        margin-bottom: 0px;
+    }
+    .container-fluid
+    {
+        padding: 0px;
+    }
+    .side-list
+    {
+        background: pink;
+        height: 100px;
+    }
+    .sidebar-search
+    {
+        padding: 0px;
+        margin: 0px;
+        background: pink;
+    }
+   body
+    {
+        background: #cccccc;
+    }
+
+    /*.row .col-md-6 .
+    {
+        border: 5px solid red;
+        max-height: 200px;
+        min-width: 300px;
+    }*/
+    .thumbnail img{
+        height: 200px;
+        width: 600px;
+    }
+    .setimg1 img{
+        height: 200px;
+        width: 400px;
+    }
+    .thumbnail p {
+        text-decoration: none;
+        margin: 0px;
+        letter-spacing: 3px;
+        word-spacing: 2px;
+    }
+    .thumbnail p
+    {
+        line-height: 18px;
+    }
+    .light-grey
+    {
+        background: #efefef !important;
+        
+    }
+    .thumbnail
+    {
+        background: #f5f9ff;
+        box-shadow: 0px 0px 20px 50px width;
+    }
+    .thumbnail:hover
+    {
+        background: #d5f9ff;
+        box-shadow: 0px 0px 20px 0px grey;
+    }
+
+    .row .col-sm-6 .thumbnail a
+    {
+        margin: 0px;
+        letter-spacing: 3px;
+        word-spacing: 2px;
+    }
+
+     li:nth-child(2n){
+        color: red;
+    }
+    a{
+        text-decoration: none;
+    }
+
+    button
+    {
+/*        border: 4px solid red;
+*/    }

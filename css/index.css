@@ -1,0 +1,45 @@
+/*body
+{
+	background-image: url('../images/indexbg.jpg');
+	background-size: cover;
+}*/
+body{
+	background-image: url('../images/indexbg.jpg');
+  animation:9000s scroll infinite linear;
+  top:0;
+  left:0;
+
+}
+
+@keyframes scroll{
+  100%{
+    background-position:990000px;
+  }
+}
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one 🙂       */
+  display: flex;
+  align-items: center;
+}
+.thumbnail
+{
+	box-shadow: 0px 0px 50px 0px black;
+	padding: 20px;
+	margin: 20px;
+}
+.thumbnail > a
+{
+	text-decoration: none!important;
+}
+ a > .thumbnail > .caption > p
+{
+	background-color: red;
+	font-size: 20px;
+	font-weight: bolder;
+	color: white;
+	padding: 20px 0px;
+	margin-top: 20px;
+	box-shadow: 0px 0px 50px 0px white;
+	text-decoration: none!important;
+}

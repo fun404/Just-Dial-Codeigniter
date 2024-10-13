@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav -->
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><iframe sandbox="allow-scripts allow-same-origin" id="196948477863607" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="./toggle nav_files/connectmyusers.html">
+    </iframe><iframe sandbox="allow-scripts allow-same-origin" id="18cdf10d5f1bf76" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="./toggle nav_files/usync.html">
+    </iframe><iframe sandbox="allow-scripts allow-same-origin" id="17229e2ea591306" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="./toggle nav_files/async_usersync.html">
+    </iframe><iframe sandbox="allow-scripts allow-same-origin" id="16a83c12c1341d2" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="./toggle nav_files/pd.html">
+    </iframe>
+<title>Tryit Editor v3.5</title>
+<meta name="viewport" content="width=device-width">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:image" content="https://www.w3schools.com/images/w3schools_logo.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="200">
+<meta property="og:image:height" content="200">
+<link rel="stylesheet" href="./toggle nav_files/w3.css">
+<link rel="stylesheet" href="./toggle nav_files/codemirror.css">
+<script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;pvsid=1542305400119667&amp;correlator=1380685027847415&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy72&amp;impl=fifs&amp;json_a=1&amp;eid=21061864%2C21062716&amp;vrg=271&amp;guci=2.2.0.0.2.2.0&amp;plat=1%3A67108864%2C2%3A67108864&amp;sc=1&amp;sfv=1-0-30&amp;iu_parts=22152718%2Csws-hb%2Cw3schools.com%2Ctry_it_leaderboard&amp;enc_prev_ius=%2F0%2F1%2F%2F2%2F%2F3&amp;prev_iu_szs=728x90&amp;rcs=71&amp;eri=1&amp;cust_params=content%3Dtryhowto&amp;cookie_enabled=1&amp;bc=7&amp;abxe=1&amp;lmt=1541239607&amp;dt=1541248417951&amp;dlt=1541246225110&amp;idt=4522&amp;frm=20&amp;biw=1366&amp;bih=657&amp;oid=3&amp;adxs=319&amp;adys=5&amp;adks=3132712143&amp;ucis=3z&amp;gut=v2&amp;ifi=143&amp;u_tz=330&amp;u_his=4&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Ftryit.asp%3Ffilename%3Dtryhow_js_topnav&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_js_topnav_responsive.asp&amp;dssz=91&amp;icsg=3002399575294624&amp;std=0&amp;vis=1&amp;dmc=2&amp;scr_x=0&amp;scr_y=0&amp;psz=1366x-1&amp;msz=1366x-1&amp;ga_vid=1414308836.1537811604&amp;ga_sid=1541246231&amp;ga_hid=1566141569&amp;fws=4"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;pvsid=1542305400119667&amp;correlator=3440260713777304&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy71&amp;impl=fifs&amp;json_a=1&amp;eid=21061864%2C21062716&amp;vrg=271&amp;guci=2.2.0.0.2.2.0&amp;plat=1%3A67108864%2C2%3A67108864&amp;sc=1&amp;sfv=1-0-30&amp;iu_parts=22152718%2Csws-hb%2Cw3schools.com%2Ctry_it_leaderboard&amp;enc_prev_ius=%2F0%2F1%2F%2F2%2F%2F3&amp;prev_iu_szs=728x90&amp;rcs=70&amp;eri=1&amp;cust_params=content%3Dtryhowto&amp;cookie_enabled=1&amp;bc=7&amp;abxe=1&amp;lmt=1541239607&amp;dt=1541248415903&amp;dlt=1541246225110&amp;idt=4522&amp;frm=20&amp;biw=1366&amp;bih=657&amp;oid=3&amp;adxs=319&amp;adys=5&amp;adks=3132712143&amp;ucis=3x&amp;gut=v2&amp;ifi=141&amp;u_tz=330&amp;u_his=4&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Ftryit.asp%3Ffilename%3Dtryhow_js_topnav&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_js_topnav_responsive.asp&amp;dssz=90&amp;icsg=3002399575294624&amp;std=0&amp;vis=1&amp;dmc=2&amp;scr_x=0&amp;scr_y=0&amp;psz=1366x-1&amp;msz=1366x-1&amp;ga_vid=1414308836.1537811604&amp;ga_sid=1541246231&amp;ga_hid=1566141569&amp;fws=4"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;pvsid=1542305400119667&amp;correlator=1153057120066402&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy70&amp;impl=fifs&amp;json_a=1&amp;eid=21061864%2C21062716&amp;vrg=271&amp;guci=2.2.0.0.2.2.0&amp;plat=1%3A67108864%2C2%3A67108864&amp;sc=1&amp;sfv=1-0-30&amp;iu_parts=22152718%2Csws-hb%2Cw3schools.com%2Ctry_it_leaderboard&amp;enc_prev_ius=%2F0%2F1%2F%2F2%2F%2F3&amp;prev_iu_szs=728x90&amp;rcs=69&amp;eri=1&amp;cust_params=content%3Dtryhowto&amp;cookie_enabled=1&amp;bc=7&amp;abxe=1&amp;lmt=1541239607&amp;dt=1541248406154&amp;dlt=1541246225110&amp;idt=4522&amp;frm=20&amp;biw=1366&amp;bih=657&amp;oid=3&amp;adxs=319&amp;adys=5&amp;adks=3132712143&amp;ucis=3v&amp;gut=v2&amp;ifi=139&amp;u_tz=330&amp;u_his=4&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Ftryit.asp%3Ffilename%3Dtryhow_js_topnav&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_js_topnav_responsive.asp&amp;dssz=89&amp;icsg=3002399575294624&amp;std=0&amp;vis=1&amp;dmc=2&amp;scr_x=0&amp;scr_y=0&amp;psz=1366x-1&amp;msz=1366x-1&amp;ga_vid=1414308836.1537811604&amp;ga_sid=1541246231&amp;ga_hid=1566141569&amp;fws=4"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;pvsid=1542305400119667&amp;correlator=556224893802645&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy69&amp;impl=fifs&amp;json_a=1&amp;eid=21061864%2C21062716&amp;vrg=271&amp;guci=2.2.0.0.2.2.0&amp;plat=1%3A67108864%2C2%3A67108864&amp;sc=1&amp;sfv=1-0-30&amp;iu_parts=22152718%2Csws-hb%2Cw3schools.com%2Ctry_it_leaderboard&amp;enc_prev_ius=%2F0%2F1%2F%2F2%2F%2F3&amp;prev_iu_szs=728x90&amp;rcs=68&amp;eri=1&amp;cust_params=content%3Dtryhowto&amp;cookie_enabled=1&amp;bc=7&amp;abxe=1&amp;lmt=1541239607&amp;dt=1541248399303&amp;dlt=1541246225110&amp;idt=4522&amp;frm=20&amp;biw=1366&amp;bih=657&amp;oid=3&amp;adxs=319&amp;adys=5&amp;adks=3132712143&amp;ucis=3t&amp;gut=v2&amp;ifi=137&amp;u_tz=330&amp;u_his=4&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Ftryit.asp%3Ffilename%3Dtryhow_js_topnav&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_js_topnav_responsive.asp&amp;dssz=88&amp;icsg=3002399575294624&amp;std=0&amp;vis=1&amp;dmc=2&amp;scr_x=0&amp;scr_y=0&amp;psz=1366x-1&amp;msz=1366x-1&amp;ga_vid=1414308836.1537811604&amp;ga_sid=1541246231&amp;ga_hid=1566141569&amp;fws=4"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;pvsid=1542305400119667&amp;correlator=4344822163716807&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy68&amp;impl=fifs&amp;json_a=1&amp;eid=21061864%2C21062716&amp;vrg=271&amp;guci=2.2.0.0.2.2.0&amp;plat=1%3A67108864%2C2%3A67108864&amp;sc=1&amp;sfv=1-0-30&amp;iu_parts=22152718%2Csws-hb%2Cw3schools.com%2Ctry_it_leaderboard&amp;enc_prev_ius=%2F0%2F1%2F%2F2%2F%2F3&amp;prev_iu_szs=728x90&amp;rcs=67&amp;eri=1&amp;cust_params=content%3Dtryhowto&amp;cookie_enabled=1&amp;bc=7&amp;abxe=1&amp;lmt=1541239607&amp;dt=1541248388653&amp;dlt=1541246225110&amp;idt=4522&amp;frm=20&amp;biw=1366&amp;bih=657&amp;oid=3&amp;adxs=319&amp;adys=5&amp;adks=3132712143&amp;ucis=3r&amp;gut=v2&amp;ifi=135&amp;u_tz=330&amp;u_his=4&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Ftryit.asp%3Ffilename%3Dtryhow_js_topnav&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_js_topnav_responsive.asp&amp;dssz=87&amp;icsg=3002399575294624&amp;std=0&amp;vis=1&amp;dmc=2&amp;scr_x=0&amp;scr_y=0&amp;psz=1366x-1&amp;msz=1366x-1&amp;ga_vid=1414308836.1537811604&amp;ga_sid=1541246231&amp;ga_hid=1566141569&amp;fws=4"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;pvsid=1542305400119667&amp;correlator=3615304238384769&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy67&amp;impl=fifs&amp;json_a=1&amp;eid=21061864%2C21062716&amp;vrg=271&amp;guci=2.2.0.0.2.2.0&amp;plat=1%3A67108864%2C2%3A67108864&amp;sc=1&amp;sfv=1-0-30&amp;iu_parts=22152718%2Csws-hb%2Cw3schools.com%2Ctry_it_leaderboard&amp;enc_prev_ius=%2F0%2F1%2F%2F2%2F%2F3&amp;prev_iu_szs=728x90&amp;rcs=66&amp;eri=1&amp;cust_params=content%3Dtryhowto&amp;cookie_enabled=1&amp;bc=7&amp;abxe=1&amp;lmt=1541239607&amp;dt=1541248315078&amp;dlt=1541246225110&amp;idt=4522&amp;frm=20&amp;biw=1366&amp;bih=657&amp;oid=3&amp;adxs=319&amp;adys=5&amp;adks=3132712143&amp;ucis=3p&amp;gut=v2&amp;ifi=133&amp;u_tz=330&amp;u_his=4&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Ftryit.asp%3Ffilename%3Dtryhow_js_topnav&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_js_topnav_responsive.asp&amp;dssz=86&amp;icsg=3002399575294624&amp;std=0&amp;vis=1&amp;dmc=2&amp;scr_x=0&amp;scr_y=0&amp;psz=1366x-1&amp;msz=1366x-1&amp;ga_vid=1414308836.1537811604&amp;ga_sid=1541246231&amp;ga_hid=1566141569&amp;fws=4"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;pvsid=1542305400119667&amp;correlator=2343468687810784&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy66&amp;impl=fifs&amp;json_a=1&amp;eid=21061864%2C21062716&amp;vrg=271&amp;guci=2.2.0.0.2.2.0&amp;plat=1%3A67108864%2C2%3A67108864&amp;sc=1&amp;sfv=1-0-30&amp;iu_parts=22152718%2Csws-hb%2Cw3schools.com%2Ctry_it_leaderboard&amp;enc_prev_ius=%2F0%2F1%2F%2F2%2F%2F3&amp;prev_iu_szs=728x90&amp;rcs=65&amp;eri=1&amp;cust_params=content%3Dtryhowto&amp;cookie_enabled=1&amp;bc=7&amp;abxe=1&amp;lmt=1541239607&amp;dt=1541248313026&amp;dlt=1541246225110&amp;idt=4522&amp;frm=20&amp;biw=1366&amp;bih=657&amp;oid=3&amp;adxs=319&amp;adys=5&amp;adks=3132712143&amp;ucis=3n&amp;gut=v2&amp;ifi=131&amp;u_tz=330&amp;u_his=4&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Ftryit.asp%3Ffilename%3Dtryhow_js_topnav&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_js_topnav_responsive.asp&amp;dssz=85&amp;icsg=3002399575294624&amp;std=0&amp;vis=1&amp;dmc=2&amp;scr_x=0&amp;scr_y=0&amp;psz=1366x-1&amp;msz=1366x-1&amp;ga_vid=1414308836.1537811604&amp;ga_sid=1541246231&amp;ga_hid=1566141569&amp;fws=4"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;pvsid=1542305400119667&amp;correlator=4029301479998207&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy65&amp;impl=fifs&amp;json_a=1&amp;eid=21061864%2C21062716&amp;vrg=271&amp;guci=2.2.0.0.2.2.0&amp;plat=1%3A67108864%2C2%3A67108864&amp;sc=1&amp;sfv=1-0-30&amp;iu_parts=22152718%2Csws-hb%2Cw3schools.com%2Ctry_it_leaderboard&amp;enc_prev_ius=%2F0%2F1%2F%2F2%2F%2F3&amp;prev_iu_szs=728x90&amp;rcs=64&amp;eri=1&amp;cust_params=content%3Dtryhowto&amp;cookie_enabled=1&amp;bc=7&amp;abxe=1&amp;lmt=1541239607&amp;dt=1541248173685&amp;dlt=1541246225110&amp;idt=4522&amp;frm=20&amp;biw=1366&amp;bih=657&amp;oid=3&amp;adxs=319&amp;adys=5&amp;adks=3132712143&amp;ucis=3l&amp;gut=v2&amp;ifi=129&amp;u_tz=330&amp;u_his=4&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Ftryit.asp%3Ffilename%3Dtryhow_js_topnav&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_js_topnav_responsive.asp&amp;dssz=84&amp;icsg=3002399575294624&amp;std=0&amp;vis=1&amp;dmc=2&amp;scr_x=0&amp;scr_y=0&amp;psz=1366x-1&amp;msz=1366x-1&amp;ga_vid=1414308836.1537811604&amp;ga_sid=1541246231&amp;ga_hid=1566141569&amp;fws=4"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;pvsid=1542305400119667&amp;correlator=1037683061128701&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy64&amp;impl=fifs&amp;json_a=1&amp;eid=21061864%2C21062716&amp;vrg=271&amp;guci=2.2.0.0.2.2.0&amp;plat=1%3A67108864%2C2%3A67108864&amp;sc=1&amp;sfv=1-0-30&amp;iu_parts=22152718%2Csws-hb%2Cw3schools.com%2Ctry_it_leaderboard&amp;enc_prev_ius=%2F0%2F1%2F%2F2%2F%2F3&amp;prev_iu_szs=728x90&amp;rcs=63&amp;eri=1&amp;cust_params=content%3Dtryhowto&amp;cookie_enabled=1&amp;bc=7&amp;abxe=1&amp;lmt=1541239607&amp;dt=1541248148907&amp;dlt=1541246225110&amp;idt=4522&amp;frm=20&amp;biw=1366&amp;bih=657&amp;oid=3&amp;adxs=319&amp;adys=5&amp;adks=3132712143&amp;ucis=3j&amp;gut=v2&amp;ifi=127&amp;u_tz=330&amp;u_his=4&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Ftryit.asp%3Ffilename%3Dtryhow_js_topnav&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_js_topnav_responsive.asp&amp;dssz=83&amp;icsg=3002399575294624&amp;std=0&amp;vis=1&amp;dmc=2&amp;scr_x=0&amp;scr_y=0&amp;psz=1366x-1&amp;msz=1366x-1&amp;ga_vid=1414308836.1537811604&amp;ga_sid=1541246231&amp;ga_hid=1566141569&amp;fws=4"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;pvsid=1542305400119667&amp;correlator=442022814526167&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy63&amp;impl=fifs&amp;json_a=1&amp;eid=21061864%2C21062716&amp;vrg=271&amp;guci=2.2.0.0.2.2.0&amp;plat=1%3A67108864%2C2%3A67108864&amp;sc=1&amp;sfv=1-0-30&amp;iu_parts=22152718%2Csws-hb%2Cw3schools.com%2Ctry_it_leaderboard&amp;enc_prev_ius=%2F0%2F1%2F%2F2%2F%2F3&amp;prev_iu_szs=728x90&amp;rcs=62&amp;eri=1&amp;cust_params=content%3Dtryhowto&amp;cookie_enabled=1&amp;bc=7&amp;abxe=1&amp;lmt=1541239607&amp;dt=1541248146858&amp;dlt=1541246225110&amp;idt=4522&amp;frm=20&amp;biw=1366&amp;bih=657&amp;oid=3&amp;adxs=319&amp;adys=5&amp;adks=3132712143&amp;ucis=3h&amp;gut=v2&amp;ifi=125&amp;u_tz=330&amp;u_his=4&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Ftryit.asp%3Ffilename%3Dtryhow_js_topnav&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_js_topnav_responsive.asp&amp;dssz=82&amp;icsg=3002399575294624&amp;std=0&amp;vis=1&amp;dmc=2&amp;scr_x=0&amp;scr_y=0&amp;psz=1366x-1&amp;msz=1366x-1&amp;ga_vid=1414308836.1537811604&amp;ga_sid=1541246231&amp;ga_hid=1566141569&amp;fws=4"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;pvsid=1542305400119667&amp;correlator=1146091032386926&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy62&amp;impl=fifs&amp;json_a=1&amp;eid=21061864%2C21062716&amp;vrg=271&amp;guci=2.2.0.0.2.2.0&amp;plat=1%3A67108864%2C2%3A67108864&amp;sc=1&amp;sfv=1-0-30&amp;iu_parts=22152718%2Csws-hb%2Cw3schools.com%2Ctry_it_leaderboard&amp;enc_prev_ius=%2F0%2F1%2F%2F2%2F%2F3&amp;prev_iu_szs=728x90&amp;rcs=61&amp;eri=1&amp;cust_params=content%3Dtryhowto&amp;cookie_enabled=1&amp;bc=7&amp;abxe=1&amp;lmt=1541239607&amp;dt=1541248136067&amp;dlt=1541246225110&amp;idt=4522&amp;frm=20&amp;biw=1366&amp;bih=657&amp;oid=3&amp;adxs=319&amp;adys=5&amp;adks=3132712143&amp;ucis=3f&amp;gut=v2&amp;ifi=123&amp;u_tz=330&amp;u_his=3&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Ftryit.asp%3Ffilename%3Dtryhow_js_topnav&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_js_topnav_responsive.asp&amp;dssz=81&amp;icsg=3002399575294624&amp;std=0&amp;vis=1&amp;dmc=2&amp;scr_x=0&amp;scr_y=0&amp;psz=1366x-1&amp;msz=1366x-1&amp;ga_vid=1414308836.1537811604&amp;ga_sid=1541246231&amp;ga_hid=1566141569&amp;fws=4"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;pvsid=1542305400119667&amp;correlator=4186557447952313&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy61&amp;impl=fifs&amp;json_a=1&amp;eid=21061864%2C21062716&amp;vrg=271&amp;guci=2.2.0.0.2.2.0&amp;plat=1%3A67108864%2C2%3A67108864&amp;sc=1&amp;sfv=1-0-30&amp;iu_parts=22152718%2Csws-hb%2Cw3schools.com%2Ctry_it_leaderboard&amp;enc_prev_ius=%2F0%2F1%2F%2F2%2F%2F3&amp;prev_iu_szs=728x90&amp;rcs=60&amp;eri=1&amp;cust_params=content%3Dtryhowto&amp;cookie_enabled=1&amp;bc=7&amp;abxe=1&amp;lmt=1541239607&amp;dt=1541248126959&amp;dlt=1541246225110&amp;idt=4522&amp;frm=20&amp;biw=1366&amp;bih=657&amp;oid=3&amp;adxs=319&amp;adys=5&amp;adks=3132712143&amp;ucis=3d&amp;gut=v2&amp;ifi=121&amp;u_tz=330&amp;u_his=3&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Ftryit.asp%3Ffilename%3Dtryhow_js_topnav&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_js_topnav_responsive.asp&amp;dssz=80&amp;icsg=3002399575294624&amp;std=0&amp;vis=1&amp;dmc=2&amp;scr_x=0&amp;scr_y=0&amp;psz=1366x-1&amp;msz=1366x-1&amp;ga_vid=1414308836.1537811604&amp;ga_sid=1541246231&amp;ga_hid=1566141569&amp;fws=4"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;pvsid=1542305400119667&amp;correlator=3047275757583438&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy60&amp;impl=fifs&amp;json_a=1&amp;eid=21061864%2C21062716&amp;vrg=271&amp;guci=2.2.0.0.2.2.0&amp;plat=1%3A67108864%2C2%3A67108864&amp;sc=1&amp;sfv=1-0-30&amp;iu_parts=22152718%2Csws-hb%2Cw3schools.com%2Ctry_it_leaderboard&amp;enc_prev_ius=%2F0%2F1%2F%2F2%2F%2F3&amp;prev_iu_szs=728x90&amp;rcs=59&amp;eri=1&amp;cust_params=content%3Dtryhowto&amp;cookie_enabled=1&amp;bc=7&amp;abxe=1&amp;lmt=1541239607&amp;dt=1541248124899&amp;dlt=1541246225110&amp;idt=4522&amp;frm=20&amp;biw=1366&amp;bih=657&amp;oid=3&amp;adxs=319&amp;adys=5&amp;adks=3132712143&amp;ucis=3b&amp;gut=v2&amp;ifi=119&amp;u_tz=330&amp;u_his=3&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Ftryit.asp%3Ffilename%3Dtryhow_js_topnav&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_js_topnav_responsive.asp&amp;dssz=79&amp;icsg=3002399575294624&amp;std=0&amp;vis=1&amp;dmc=2&amp;scr_x=0&amp;scr_y=0&amp;psz=1366x-1&amp;msz=1366x-1&amp;ga_vid=1414308836.1537811604&amp;ga_sid=1541246231&amp;ga_hid=1566141569&amp;fws=4"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;pvsid=1542305400119667&amp;correlator=1143612249986021&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy59&amp;impl=fifs&amp;json_a=1&amp;eid=21061864%2C21062716&amp;vrg=271&amp;guci=2.2.0.0.2.2.0&amp;plat=1%3A67108864%2C2%3A67108864&amp;sc=1&amp;sfv=1-0-30&amp;iu_parts=22152718%2Csws-hb%2Cw3schools.com%2Ctry_it_leaderboard&amp;enc_prev_ius=%2F0%2F1%2F%2F2%2F%2F3&amp;prev_iu_szs=728x90&amp;rcs=58&amp;eri=1&amp;cust_params=content%3Dtryhowto&amp;cookie_enabled=1&amp;bc=7&amp;abxe=1&amp;lmt=1541239607&amp;dt=1541248115721&amp;dlt=1541246225110&amp;idt=4522&amp;frm=20&amp;biw=1366&amp;bih=657&amp;oid=3&amp;adxs=319&amp;adys=5&amp;adks=3132712143&amp;ucis=39&amp;gut=v2&amp;ifi=117&amp;u_tz=330&amp;u_his=3&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Ftryit.asp%3Ffilename%3Dtryhow_js_topnav&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_js_topnav_responsive.asp&amp;dssz=78&amp;icsg=3002399575294624&amp;std=0&amp;vis=1&amp;dmc=2&amp;scr_x=0&amp;scr_y=0&amp;psz=1366x-1&amp;msz=1366x-1&amp;ga_vid=1414308836.1537811604&amp;ga_sid=1541246231&amp;ga_hid=1566141569&amp;fws=4"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;pvsid=1542305400119667&amp;correlator=76790137952574&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy58&amp;impl=fifs&amp;json_a=1&amp;eid=21061864%2C21062716&amp;vrg=271&amp;guci=2.2.0.0.2.2.0&amp;plat=1%3A67108864%2C2%3A67108864&amp;sc=1&amp;sfv=1-0-30&amp;iu_parts=22152718%2Csws-hb%2Cw3schools.com%2Ctry_it_leaderboard&amp;enc_prev_ius=%2F0%2F1%2F%2F2%2F%2F3&amp;prev_iu_szs=728x90&amp;rcs=57&amp;eri=1&amp;cust_params=content%3Dtryhowto&amp;cookie_enabled=1&amp;bc=7&amp;abxe=1&amp;lmt=1541239607&amp;dt=1541248013757&amp;dlt=1541246225110&amp;idt=4522&amp;frm=20&amp;biw=1366&amp;bih=657&amp;oid=3&amp;adxs=319&amp;adys=5&amp;adks=3132712143&amp;ucis=37&amp;gut=v2&amp;ifi=115&amp;u_tz=330&amp;u_his=3&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Ftryit.asp%3Ffilename%3Dtryhow_js_topnav&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_js_topnav_responsive.asp&amp;dssz=77&amp;icsg=3002399575294624&amp;std=0&amp;vis=1&amp;dmc=2&amp;scr_x=0&amp;scr_y=0&amp;psz=1366x-1&amp;msz=1366x-1&amp;ga_vid=1414308836.1537811604&amp;ga_sid=1541246231&amp;ga_hid=1566141569&amp;fws=4"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;pvsid=1542305400119667&amp;correlator=1400869556909129&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy57&amp;impl=fifs&amp;json_a=1&amp;eid=21061864%2C21062716&amp;vrg=271&amp;guci=2.2.0.0.2.2.0&amp;plat=1%3A67108864%2C2%3A67108864&amp;sc=1&amp;sfv=1-0-30&amp;iu_parts=22152718%2Csws-hb%2Cw3schools.com%2Ctry_it_leaderboard&amp;enc_prev_ius=%2F0%2F1%2F%2F2%2F%2F3&amp;prev_iu_szs=728x90&amp;rcs=56&amp;eri=1&amp;cust_params=content%3Dtryhowto&amp;cookie_enabled=1&amp;bc=7&amp;abxe=1&amp;lmt=1541239607&amp;dt=1541248002945&amp;dlt=1541246225110&amp;idt=4522&amp;frm=20&amp;biw=1366&amp;bih=657&amp;oid=3&amp;adxs=319&amp;adys=5&amp;adks=3132712143&amp;ucis=35&amp;gut=v2&amp;ifi=113&amp;u_tz=330&amp;u_his=3&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Ftryit.asp%3Ffilename%3Dtryhow_js_topnav&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_js_topnav_responsive.asp&amp;dssz=76&amp;icsg=3002399575294624&amp;std=0&amp;vis=1&amp;dmc=2&amp;scr_x=0&amp;scr_y=0&amp;psz=1366x-1&amp;msz=1366x-1&amp;ga_vid=1414308836.1537811604&amp;ga_sid=1541246231&amp;ga_hid=1566141569&amp;fws=4"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;pvsid=1542305400119667&amp;correlator=3897159068104880&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy56&amp;impl=fifs&amp;json_a=1&amp;eid=21061864%2C21062716&amp;vrg=271&amp;guci=2.2.0.0.2.2.0&amp;plat=1%3A67108864%2C2%3A67108864&amp;sc=1&amp;sfv=1-0-30&amp;iu_parts=22152718%2Csws-hb%2Cw3schools.com%2Ctry_it_leaderboard&amp;enc_prev_ius=%2F0%2F1%2F%2F2%2F%2F3&amp;prev_iu_szs=728x90&amp;rcs=55&amp;eri=1&amp;cust_params=content%3Dtryhowto&amp;cookie_enabled=1&amp;bc=7&amp;abxe=1&amp;lmt=1541239607&amp;dt=1541247993117&amp;dlt=1541246225110&amp;idt=4522&amp;frm=20&amp;biw=1366&amp;bih=657&amp;oid=3&amp;adxs=319&amp;adys=5&amp;adks=3132712143&amp;ucis=33&amp;gut=v2&amp;ifi=111&amp;u_tz=330&amp;u_his=3&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Ftryit.asp%3Ffilename%3Dtryhow_js_topnav&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_js_topnav_responsive.asp&amp;dssz=75&amp;icsg=3002399575294624&amp;std=0&amp;vis=1&amp;dmc=2&amp;scr_x=0&amp;scr_y=0&amp;psz=1366x-1&amp;msz=1366x-1&amp;ga_vid=1414308836.1537811604&amp;ga_sid=1541246231&amp;ga_hid=1566141569&amp;fws=4"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;pvsid=1542305400119667&amp;correlator=3575195304910801&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy55&amp;impl=fifs&amp;json_a=1&amp;eid=21061864%2C21062716&amp;vrg=271&amp;guci=2.2.0.0.2.2.0&amp;plat=1%3A67108864%2C2%3A67108864&amp;sc=1&amp;sfv=1-0-30&amp;iu_parts=22152718%2Csws-hb%2Cw3schools.com%2Ctry_it_leaderboard&amp;enc_prev_ius=%2F0%2F1%2F%2F2%2F%2F3&amp;prev_iu_szs=728x90&amp;rcs=54&amp;eri=1&amp;cust_params=content%3Dtryhowto&amp;cookie_enabled=1&amp;bc=7&amp;abxe=1&amp;lmt=1541239607&amp;dt=1541247970405&amp;dlt=1541246225110&amp;idt=4522&amp;frm=20&amp;biw=1366&amp;bih=657&amp;oid=3&amp;adxs=319&amp;adys=5&amp;adks=3132712143&amp;ucis=31&amp;gut=v2&amp;ifi=109&amp;u_tz=330&amp;u_his=2&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Ftryit.asp%3Ffilename%3Dtryhow_js_topnav&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_js_topnav_responsive.asp&amp;dssz=74&amp;icsg=3002399575294624&amp;std=0&amp;vis=1&amp;dmc=2&amp;scr_x=0&amp;scr_y=0&amp;psz=1366x-1&amp;msz=1366x-1&amp;ga_vid=1414308836.1537811604&amp;ga_sid=1541246231&amp;ga_hid=1566141569&amp;fws=4"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;pvsid=1542305400119667&amp;correlator=2793365876416328&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy54&amp;impl=fifs&amp;json_a=1&amp;eid=21061864%2C21062716&amp;vrg=271&amp;guci=2.2.0.0.2.2.0&amp;plat=1%3A67108864%2C2%3A67108864&amp;sc=1&amp;sfv=1-0-30&amp;iu_parts=22152718%2Csws-hb%2Cw3schools.com%2Ctry_it_leaderboard&amp;enc_prev_ius=%2F0%2F1%2F%2F2%2F%2F3&amp;prev_iu_szs=728x90&amp;rcs=53&amp;eri=1&amp;cust_params=content%3Dtryhowto&amp;cookie_enabled=1&amp;bc=7&amp;abxe=1&amp;lmt=1541239607&amp;dt=1541247962322&amp;dlt=1541246225110&amp;idt=4522&amp;frm=20&amp;biw=1366&amp;bih=657&amp;oid=3&amp;adxs=319&amp;adys=5&amp;adks=3132712143&amp;ucis=2z&amp;gut=v2&amp;ifi=107&amp;u_tz=330&amp;u_his=2&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Ftryit.asp%3Ffilename%3Dtryhow_js_topnav&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_js_topnav_responsive.asp&amp;dssz=73&amp;icsg=3002399575294624&amp;std=0&amp;vis=1&amp;dmc=2&amp;scr_x=0&amp;scr_y=0&amp;psz=1366x-1&amp;msz=1366x-1&amp;ga_vid=1414308836.1537811604&amp;ga_sid=1541246231&amp;ga_hid=1566141569&amp;fws=4"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;pvsid=1542305400119667&amp;correlator=3234690838739308&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy53&amp;impl=fifs&amp;json_a=1&amp;eid=21061864%2C21062716&amp;vrg=271&amp;guci=2.2.0.0.2.2.0&amp;plat=1%3A67108864%2C2%3A67108864&amp;sc=1&amp;sfv=1-0-30&amp;iu_parts=22152718%2Csws-hb%2Cw3schools.com%2Ctry_it_leaderboard&amp;enc_prev_ius=%2F0%2F1%2F%2F2%2F%2F3&amp;prev_iu_szs=728x90&amp;rcs=52&amp;eri=1&amp;cust_params=content%3Dtryhowto&amp;cookie_enabled=1&amp;bc=7&amp;abxe=1&amp;lmt=1541239607&amp;dt=1541247951995&amp;dlt=1541246225110&amp;idt=4522&amp;frm=20&amp;biw=1366&amp;bih=657&amp;oid=3&amp;adxs=319&amp;adys=5&amp;adks=3132712143&amp;ucis=2x&amp;gut=v2&amp;ifi=105&amp;u_tz=330&amp;u_his=2&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Ftryit.asp%3Ffilename%3Dtryhow_js_topnav&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_js_topnav_responsive.asp&amp;dssz=72&amp;icsg=3002399575294624&amp;std=0&amp;vis=1&amp;dmc=2&amp;scr_x=0&amp;scr_y=0&amp;psz=1366x-1&amp;msz=1366x-1&amp;ga_vid=1414308836.1537811604&amp;ga_sid=1541246231&amp;ga_hid=1566141569&amp;fws=4"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;pvsid=1542305400119667&amp;correlator=1297232649739540&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy52&amp;impl=fifs&amp;json_a=1&amp;eid=21061864%2C21062716&amp;vrg=271&amp;guci=2.2.0.0.2.2.0&amp;plat=1%3A67108864%2C2%3A67108864&amp;sc=1&amp;sfv=1-0-30&amp;iu_parts=22152718%2Csws-hb%2Cw3schools.com%2Ctry_it_leaderboard&amp;enc_prev_ius=%2F0%2F1%2F%2F2%2F%2F3&amp;prev_iu_szs=728x90&amp;rcs=51&amp;eri=1&amp;cust_params=content%3Dtryhowto&amp;cookie_enabled=1&amp;bc=7&amp;abxe=1&amp;lmt=1541239607&amp;dt=1541247939904&amp;dlt=1541246225110&amp;idt=4522&amp;frm=20&amp;biw=1366&amp;bih=657&amp;oid=3&amp;adxs=319&amp;adys=5&amp;adks=3132712143&amp;ucis=2v&amp;gut=v2&amp;ifi=103&amp;u_tz=330&amp;u_his=2&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Ftryit.asp%3Ffilename%3Dtryhow_js_topnav&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_js_topnav_responsive.asp&amp;dssz=71&amp;icsg=3002399575294624&amp;std=0&amp;vis=1&amp;dmc=2&amp;scr_x=0&amp;scr_y=0&amp;psz=1366x-1&amp;msz=1366x-1&amp;ga_vid=1414308836.1537811604&amp;ga_sid=1541246231&amp;ga_hid=1566141569&amp;fws=4"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;pvsid=1542305400119667&amp;correlator=998585809657425&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy51&amp;impl=fifs&amp;json_a=1&amp;eid=21061864%2C21062716&amp;vrg=271&amp;guci=2.2.0.0.2.2.0&amp;plat=1%3A67108864%2C2%3A67108864&amp;sc=1&amp;sfv=1-0-30&amp;iu_parts=22152718%2Csws-hb%2Cw3schools.com%2Ctry_it_leaderboard&amp;enc_prev_ius=%2F0%2F1%2F%2F2%2F%2F3&amp;prev_iu_szs=728x90&amp;rcs=50&amp;eri=1&amp;cust_params=content%3Dtryhowto&amp;cookie_enabled=1&amp;bc=7&amp;abxe=1&amp;lmt=1541239607&amp;dt=1541247937849&amp;dlt=1541246225110&amp;idt=4522&amp;frm=20&amp;biw=1366&amp;bih=657&amp;oid=3&amp;adxs=319&amp;adys=5&amp;adks=3132712143&amp;ucis=2t&amp;gut=v2&amp;ifi=101&amp;u_tz=330&amp;u_his=2&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Ftryit.asp%3Ffilename%3Dtryhow_js_topnav&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_js_topnav_responsive.asp&amp;dssz=70&amp;icsg=3002399575294624&amp;std=0&amp;vis=1&amp;dmc=2&amp;scr_x=0&amp;scr_y=0&amp;psz=1366x-1&amp;msz=1366x-1&amp;ga_vid=1414308836.1537811604&amp;ga_sid=1541246231&amp;ga_hid=1566141569&amp;fws=4"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;pvsid=1542305400119667&amp;correlator=3890493539609297&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy50&amp;impl=fifs&amp;json_a=1&amp;eid=21061864%2C21062716&amp;vrg=271&amp;guci=2.2.0.0.2.2.0&amp;plat=1%3A67108864%2C2%3A67108864&amp;sc=1&amp;sfv=1-0-30&amp;iu_parts=22152718%2Csws-hb%2Cw3schools.com%2Ctry_it_leaderboard&amp;enc_prev_ius=%2F0%2F1%2F%2F2%2F%2F3&amp;prev_iu_szs=728x90&amp;rcs=49&amp;eri=1&amp;cust_params=content%3Dtryhowto&amp;cookie_enabled=1&amp;bc=7&amp;abxe=1&amp;lmt=1541239607&amp;dt=1541247928370&amp;dlt=1541246225110&amp;idt=4522&amp;frm=20&amp;biw=1366&amp;bih=657&amp;oid=3&amp;adxs=319&amp;adys=5&amp;adks=3132712143&amp;ucis=2r&amp;gut=v2&amp;ifi=99&amp;u_tz=330&amp;u_his=1&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Ftryit.asp%3Ffilename%3Dtryhow_js_topnav&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_js_topnav_responsive.asp&amp;dssz=69&amp;icsg=3002399575294624&amp;std=0&amp;vis=1&amp;dmc=2&amp;scr_x=0&amp;scr_y=0&amp;psz=1366x-1&amp;msz=1366x-1&amp;ga_vid=1414308836.1537811604&amp;ga_sid=1541246231&amp;ga_hid=1566141569&amp;fws=4"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;pvsid=1542305400119667&amp;correlator=865149825793335&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy49&amp;impl=fifs&amp;json_a=1&amp;eid=21061864%2C21062716&amp;vrg=271&amp;guci=2.2.0.0.2.2.0&amp;plat=1%3A67108864%2C2%3A67108864&amp;sc=1&amp;sfv=1-0-30&amp;iu_parts=22152718%2Csws-hb%2Cw3schools.com%2Ctry_it_leaderboard&amp;enc_prev_ius=%2F0%2F1%2F%2F2%2F%2F3&amp;prev_iu_szs=728x90&amp;rcs=48&amp;eri=1&amp;cust_params=content%3Dtryhowto&amp;cookie_enabled=1&amp;bc=7&amp;abxe=1&amp;lmt=1541239607&amp;dt=1541247926326&amp;dlt=1541246225110&amp;idt=4522&amp;frm=20&amp;biw=1366&amp;bih=657&amp;oid=3&amp;adxs=319&amp;adys=5&amp;adks=3132712143&amp;ucis=2p&amp;gut=v2&amp;ifi=97&amp;u_tz=330&amp;u_his=1&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Ftryit.asp%3Ffilename%3Dtryhow_js_topnav&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_js_topnav_responsive.asp&amp;dssz=68&amp;icsg=3002399575294624&amp;std=0&amp;vis=1&amp;dmc=2&amp;scr_x=0&amp;scr_y=0&amp;psz=1366x-1&amp;msz=1366x-1&amp;ga_vid=1414308836.1537811604&amp;ga_sid=1541246231&amp;ga_hid=1566141569&amp;fws=4"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;pvsid=1542305400119667&amp;correlator=2064225952226932&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy48&amp;impl=fifs&amp;json_a=1&amp;eid=21061864%2C21062716&amp;vrg=271&amp;guci=2.2.0.0.2.2.0&amp;plat=1%3A67108864%2C2%3A67108864&amp;sc=1&amp;sfv=1-0-30&amp;iu_parts=22152718%2Csws-hb%2Cw3schools.com%2Ctry_it_leaderboard&amp;enc_prev_ius=%2F0%2F1%2F%2F2%2F%2F3&amp;prev_iu_szs=728x90&amp;rcs=47&amp;eri=1&amp;cust_params=content%3Dtryhowto&amp;cookie_enabled=1&amp;bc=7&amp;abxe=1&amp;lmt=1541239607&amp;dt=1541247896439&amp;dlt=1541246225110&amp;idt=4522&amp;frm=20&amp;biw=1366&amp;bih=657&amp;oid=3&amp;adxs=319&amp;adys=5&amp;adks=3132712143&amp;ucis=2n&amp;gut=v2&amp;ifi=95&amp;u_tz=330&amp;u_his=1&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Ftryit.asp%3Ffilename%3Dtryhow_js_topnav&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_js_topnav_responsive.asp&amp;dssz=67&amp;icsg=3002399575294624&amp;std=0&amp;vis=1&amp;dmc=2&amp;scr_x=0&amp;scr_y=0&amp;psz=1366x-1&amp;msz=1366x-1&amp;ga_vid=1414308836.1537811604&amp;ga_sid=1541246231&amp;ga_hid=1566141569&amp;fws=4"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;pvsid=1542305400119667&amp;correlator=1179550040909191&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy47&amp;impl=fifs&amp;json_a=1&amp;eid=21061864%2C21062716&amp;vrg=271&amp;guci=2.2.0.0.2.2.0&amp;plat=1%3A67108864%2C2%3A67108864&amp;sc=1&amp;sfv=1-0-30&amp;iu_parts=22152718%2Csws-hb%2Cw3schools.com%2Ctry_it_leaderboard&amp;enc_prev_ius=%2F0%2F1%2F%2F2%2F%2F3&amp;prev_iu_szs=728x90&amp;rcs=46&amp;eri=1&amp;cust_params=content%3Dtryhowto&amp;cookie_enabled=1&amp;bc=7&amp;abxe=1&amp;lmt=1541239607&amp;dt=1541247894387&amp;dlt=1541246225110&amp;idt=4522&amp;frm=20&amp;biw=1366&amp;bih=657&amp;oid=3&amp;adxs=319&amp;adys=5&amp;adks=3132712143&amp;ucis=2l&amp;gut=v2&amp;ifi=93&amp;u_tz=330&amp;u_his=1&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Ftryit.asp%3Ffilename%3Dtryhow_js_topnav&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_js_topnav_responsive.asp&amp;dssz=66&amp;icsg=3002399575294624&amp;std=0&amp;vis=1&amp;dmc=2&amp;scr_x=0&amp;scr_y=0&amp;psz=1366x-1&amp;msz=1366x-1&amp;ga_vid=1414308836.1537811604&amp;ga_sid=1541246231&amp;ga_hid=1566141569&amp;fws=4"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;pvsid=1542305400119667&amp;correlator=4315753059108253&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy46&amp;impl=fifs&amp;json_a=1&amp;eid=21061864%2C21062716&amp;vrg=271&amp;guci=2.2.0.0.2.2.0&amp;plat=1%3A67108864%2C2%3A67108864&amp;sc=1&amp;sfv=1-0-30&amp;iu_parts=22152718%2Csws-hb%2Cw3schools.com%2Ctry_it_leaderboard&amp;enc_prev_ius=%2F0%2F1%2F%2F2%2F%2F3&amp;prev_iu_szs=728x90&amp;rcs=45&amp;eri=1&amp;cust_params=content%3Dtryhowto&amp;cookie_enabled=1&amp;bc=7&amp;abxe=1&amp;lmt=1541239607&amp;dt=1541247870657&amp;dlt=1541246225110&amp;idt=4522&amp;frm=20&amp;biw=1366&amp;bih=657&amp;oid=3&amp;adxs=319&amp;adys=5&amp;adks=3132712143&amp;ucis=2j&amp;gut=v2&amp;ifi=91&amp;u_tz=330&amp;u_his=1&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Ftryit.asp%3Ffilename%3Dtryhow_js_topnav&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_js_topnav_responsive.asp&amp;dssz=65&amp;icsg=3002399575294624&amp;std=0&amp;vis=1&amp;dmc=2&amp;scr_x=0&amp;scr_y=0&amp;psz=1366x-1&amp;msz=1366x-1&amp;ga_vid=1414308836.1537811604&amp;ga_sid=1541246231&amp;ga_hid=1566141569&amp;fws=4"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;pvsid=1542305400119667&amp;correlator=3793291351388773&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy45&amp;impl=fifs&amp;json_a=1&amp;eid=21061864%2C21062716&amp;vrg=271&amp;guci=2.2.0.0.2.2.0&amp;plat=1%3A67108864%2C2%3A67108864&amp;sc=1&amp;sfv=1-0-30&amp;iu_parts=22152718%2Csws-hb%2Cw3schools.com%2Ctry_it_leaderboard&amp;enc_prev_ius=%2F0%2F1%2F%2F2%2F%2F3&amp;prev_iu_szs=728x90&amp;rcs=44&amp;eri=1&amp;cust_params=content%3Dtryhowto&amp;cookie_enabled=1&amp;bc=7&amp;abxe=1&amp;lmt=1541239607&amp;dt=1541247868612&amp;dlt=1541246225110&amp;idt=4522&amp;frm=20&amp;biw=1366&amp;bih=657&amp;oid=3&amp;adxs=319&amp;adys=5&amp;adks=3132712143&amp;ucis=2h&amp;gut=v2&amp;ifi=89&amp;u_tz=330&amp;u_his=1&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Ftryit.asp%3Ffilename%3Dtryhow_js_topnav&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_js_topnav_responsive.asp&amp;dssz=64&amp;icsg=3002399575294624&amp;std=0&amp;vis=1&amp;dmc=2&amp;scr_x=0&amp;scr_y=0&amp;psz=1366x-1&amp;msz=1366x-1&amp;ga_vid=1414308836.1537811604&amp;ga_sid=1541246231&amp;ga_hid=1566141569&amp;fws=4"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;pvsid=1542305400119667&amp;correlator=2680469157698583&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy44&amp;impl=fifs&amp;json_a=1&amp;eid=21061864%2C21062716&amp;vrg=271&amp;guci=2.2.0.0.2.2.0&amp;plat=1%3A67108864%2C2%3A67108864&amp;sc=1&amp;sfv=1-0-30&amp;iu_parts=22152718%2Csws-hb%2Cw3schools.com%2Ctry_it_leaderboard&amp;enc_prev_ius=%2F0%2F1%2F%2F2%2F%2F3&amp;prev_iu_szs=728x90&amp;rcs=43&amp;eri=1&amp;cust_params=content%3Dtryhowto&amp;cookie_enabled=1&amp;bc=7&amp;abxe=1&amp;lmt=1541239607&amp;dt=1541247837798&amp;dlt=1541246225110&amp;idt=4522&amp;frm=20&amp;biw=1366&amp;bih=657&amp;oid=3&amp;adxs=319&amp;adys=5&amp;adks=3132712143&amp;ucis=2f&amp;gut=v2&amp;ifi=87&amp;u_tz=330&amp;u_his=1&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Ftryit.asp%3Ffilename%3Dtryhow_js_topnav&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_js_topnav_responsive.asp&amp;dssz=63&amp;icsg=3002399575294624&amp;std=0&amp;vis=1&amp;dmc=2&amp;scr_x=0&amp;scr_y=0&amp;psz=1366x-1&amp;msz=1366x-1&amp;ga_vid=1414308836.1537811604&amp;ga_sid=1541246231&amp;ga_hid=1566141569&amp;fws=4"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;pvsid=1542305400119667&amp;correlator=292936568552624&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy43&amp;impl=fifs&amp;json_a=1&amp;eid=21061864%2C21062716&amp;vrg=271&amp;guci=2.2.0.0.2.2.0&amp;plat=1%3A67108864%2C2%3A67108864&amp;sc=1&amp;sfv=1-0-30&amp;iu_parts=22152718%2Csws-hb%2Cw3schools.com%2Ctry_it_leaderboard&amp;enc_prev_ius=%2F0%2F1%2F%2F2%2F%2F3&amp;prev_iu_szs=728x90&amp;rcs=42&amp;eri=1&amp;cust_params=content%3Dtryhowto&amp;cookie_enabled=1&amp;bc=7&amp;abxe=1&amp;lmt=1541239607&amp;dt=1541247771297&amp;dlt=1541246225110&amp;idt=4522&amp;frm=20&amp;biw=1366&amp;bih=657&amp;oid=3&amp;adxs=319&amp;adys=5&amp;adks=3132712143&amp;ucis=2d&amp;gut=v2&amp;ifi=85&amp;u_tz=330&amp;u_his=1&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Ftryit.asp%3Ffilename%3Dtryhow_js_topnav&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_js_topnav_responsive.asp&amp;dssz=62&amp;icsg=3002399575294624&amp;std=0&amp;vis=1&amp;dmc=2&amp;scr_x=0&amp;scr_y=0&amp;psz=1366x-1&amp;msz=1366x-1&amp;ga_vid=1414308836.1537811604&amp;ga_sid=1541246231&amp;ga_hid=1566141569&amp;fws=4"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;pvsid=1542305400119667&amp;correlator=3209094871625944&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy42&amp;impl=fifs&amp;json_a=1&amp;eid=21061864%2C21062716&amp;vrg=271&amp;guci=2.2.0.0.2.2.0&amp;plat=1%3A67108864%2C2%3A67108864&amp;sc=1&amp;sfv=1-0-30&amp;iu_parts=22152718%2Csws-hb%2Cw3schools.com%2Ctry_it_leaderboard&amp;enc_prev_ius=%2F0%2F1%2F%2F2%2F%2F3&amp;prev_iu_szs=728x90&amp;rcs=41&amp;eri=1&amp;cust_params=content%3Dtryhowto&amp;cookie_enabled=1&amp;bc=7&amp;abxe=1&amp;lmt=1541239607&amp;dt=1541247768813&amp;dlt=1541246225110&amp;idt=4522&amp;frm=20&amp;biw=1366&amp;bih=657&amp;oid=3&amp;adxs=319&amp;adys=5&amp;adks=3132712143&amp;ucis=2b&amp;gut=v2&amp;ifi=83&amp;u_tz=330&amp;u_his=1&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Ftryit.asp%3Ffilename%3Dtryhow_js_topnav&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_js_topnav_responsive.asp&amp;dssz=61&amp;icsg=3002399575294624&amp;std=0&amp;vis=1&amp;dmc=2&amp;scr_x=0&amp;scr_y=0&amp;psz=1366x-1&amp;msz=1366x-1&amp;ga_vid=1414308836.1537811604&amp;ga_sid=1541246231&amp;ga_hid=1566141569&amp;fws=4"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;pvsid=1542305400119667&amp;correlator=1570118950388330&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy41&amp;impl=fifs&amp;json_a=1&amp;eid=21061864%2C21062716&amp;vrg=271&amp;guci=2.2.0.0.2.2.0&amp;plat=1%3A67108864%2C2%3A67108864&amp;sc=1&amp;sfv=1-0-30&amp;iu_parts=22152718%2Csws-hb%2Cw3schools.com%2Ctry_it_leaderboard&amp;enc_prev_ius=%2F0%2F1%2F%2F2%2F%2F3&amp;prev_iu_szs=728x90&amp;rcs=40&amp;eri=1&amp;cust_params=content%3Dtryhowto&amp;cookie_enabled=1&amp;bc=7&amp;abxe=1&amp;lmt=1541239607&amp;dt=1541247707398&amp;dlt=1541246225110&amp;idt=4522&amp;frm=20&amp;biw=1366&amp;bih=657&amp;oid=3&amp;adxs=319&amp;adys=5&amp;adks=3132712143&amp;ucis=29&amp;gut=v2&amp;ifi=81&amp;u_tz=330&amp;u_his=1&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Ftryit.asp%3Ffilename%3Dtryhow_js_topnav&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_js_topnav_responsive.asp&amp;dssz=60&amp;icsg=3002399575294624&amp;std=0&amp;vis=1&amp;dmc=2&amp;scr_x=0&amp;scr_y=0&amp;psz=1366x-1&amp;msz=1366x-1&amp;ga_vid=1414308836.1537811604&amp;ga_sid=1541246231&amp;ga_hid=1566141569&amp;fws=4"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;pvsid=1542305400119667&amp;correlator=3194930675924539&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy40&amp;impl=fifs&amp;json_a=1&amp;eid=21061864%2C21062716&amp;vrg=271&amp;guci=2.2.0.0.2.2.0&amp;plat=1%3A67108864%2C2%3A67108864&amp;sc=1&amp;sfv=1-0-30&amp;iu_parts=22152718%2Csws-hb%2Cw3schools.com%2Ctry_it_leaderboard&amp;enc_prev_ius=%2F0%2F1%2F%2F2%2F%2F3&amp;prev_iu_szs=728x90&amp;rcs=39&amp;eri=1&amp;cust_params=content%3Dtryhowto&amp;cookie_enabled=1&amp;bc=7&amp;abxe=1&amp;lmt=1541239607&amp;dt=1541247701295&amp;dlt=1541246225110&amp;idt=4522&amp;frm=20&amp;biw=1366&amp;bih=657&amp;oid=3&amp;adxs=319&amp;adys=5&amp;adks=3132712143&amp;ucis=27&amp;gut=v2&amp;ifi=79&amp;u_tz=330&amp;u_his=1&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Ftryit.asp%3Ffilename%3Dtryhow_js_topnav&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_js_topnav_responsive.asp&amp;dssz=59&amp;icsg=3002399575294624&amp;std=0&amp;vis=1&amp;dmc=2&amp;scr_x=0&amp;scr_y=0&amp;psz=1366x-1&amp;msz=1366x-1&amp;ga_vid=1414308836.1537811604&amp;ga_sid=1541246231&amp;ga_hid=1566141569&amp;fws=4"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;pvsid=1542305400119667&amp;correlator=56230588795531&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy39&amp;impl=fifs&amp;json_a=1&amp;eid=21061864%2C21062716&amp;vrg=271&amp;guci=2.2.0.0.2.2.0&amp;plat=1%3A67108864%2C2%3A67108864&amp;sc=1&amp;sfv=1-0-30&amp;iu_parts=22152718%2Csws-hb%2Cw3schools.com%2Ctry_it_leaderboard&amp;enc_prev_ius=%2F0%2F1%2F%2F2%2F%2F3&amp;prev_iu_szs=728x90&amp;rcs=38&amp;eri=1&amp;cust_params=content%3Dtryhowto&amp;cookie_enabled=1&amp;bc=7&amp;abxe=1&amp;lmt=1541239607&amp;dt=1541247699247&amp;dlt=1541246225110&amp;idt=4522&amp;frm=20&amp;biw=1366&amp;bih=657&amp;oid=3&amp;adxs=319&amp;adys=5&amp;adks=3132712143&amp;ucis=25&amp;gut=v2&amp;ifi=77&amp;u_tz=330&amp;u_his=1&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Ftryit.asp%3Ffilename%3Dtryhow_js_topnav&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_js_topnav_responsive.asp&amp;dssz=58&amp;icsg=3002399575294624&amp;std=0&amp;vis=1&amp;dmc=2&amp;scr_x=0&amp;scr_y=0&amp;psz=1366x-1&amp;msz=1366x-1&amp;ga_vid=1414308836.1537811604&amp;ga_sid=1541246231&amp;ga_hid=1566141569&amp;fws=4"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;pvsid=1542305400119667&amp;correlator=1481270427523520&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy38&amp;impl=fifs&amp;json_a=1&amp;eid=21061864%2C21062716&amp;vrg=271&amp;guci=2.2.0.0.2.2.0&amp;plat=1%3A67108864%2C2%3A67108864&amp;sc=1&amp;sfv=1-0-30&amp;iu_parts=22152718%2Csws-hb%2Cw3schools.com%2Ctry_it_leaderboard&amp;enc_prev_ius=%2F0%2F1%2F%2F2%2F%2F3&amp;prev_iu_szs=728x90&amp;rcs=37&amp;eri=1&amp;cust_params=content%3Dtryhowto&amp;cookie_enabled=1&amp;bc=7&amp;abxe=1&amp;lmt=1541239607&amp;dt=1541247655926&amp;dlt=1541246225110&amp;idt=4522&amp;frm=20&amp;biw=1366&amp;bih=657&amp;oid=3&amp;adxs=319&amp;adys=5&amp;adks=3132712143&amp;ucis=23&amp;gut=v2&amp;ifi=75&amp;u_tz=330&amp;u_his=1&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Ftryit.asp%3Ffilename%3Dtryhow_js_topnav&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_js_topnav_responsive.asp&amp;dssz=57&amp;icsg=3002399575294624&amp;std=0&amp;vis=1&amp;dmc=2&amp;scr_x=0&amp;scr_y=0&amp;psz=1366x-1&amp;msz=1366x-1&amp;ga_vid=1414308836.1537811604&amp;ga_sid=1541246231&amp;ga_hid=1566141569&amp;fws=4"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;pvsid=1542305400119667&amp;correlator=402300610296935&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy37&amp;impl=fifs&amp;json_a=1&amp;eid=21061864%2C21062716&amp;vrg=271&amp;guci=2.2.0.0.2.2.0&amp;plat=1%3A67108864%2C2%3A67108864&amp;sc=1&amp;sfv=1-0-30&amp;iu_parts=22152718%2Csws-hb%2Cw3schools.com%2Ctry_it_leaderboard&amp;enc_prev_ius=%2F0%2F1%2F%2F2%2F%2F3&amp;prev_iu_szs=728x90&amp;rcs=36&amp;eri=1&amp;cust_params=content%3Dtryhowto&amp;cookie_enabled=1&amp;bc=7&amp;abxe=1&amp;lmt=1541239607&amp;dt=1541247650826&amp;dlt=1541246225110&amp;idt=4522&amp;frm=20&amp;biw=1366&amp;bih=657&amp;oid=3&amp;adxs=319&amp;adys=5&amp;adks=3132712143&amp;ucis=21&amp;gut=v2&amp;ifi=73&amp;u_tz=330&amp;u_his=1&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Ftryit.asp%3Ffilename%3Dtryhow_js_topnav&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_js_topnav_responsive.asp&amp;dssz=56&amp;icsg=3002399575294624&amp;std=0&amp;vis=1&amp;dmc=2&amp;scr_x=0&amp;scr_y=0&amp;psz=1366x-1&amp;msz=1366x-1&amp;ga_vid=1414308836.1537811604&amp;ga_sid=1541246231&amp;ga_hid=1566141569&amp;fws=4"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;pvsid=1542305400119667&amp;correlator=2345725845804535&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy36&amp;impl=fifs&amp;json_a=1&amp;eid=21061864%2C21062716&amp;vrg=271&amp;guci=2.2.0.0.2.2.0&amp;plat=1%3A67108864%2C2%3A67108864&amp;sc=1&amp;sfv=1-0-30&amp;iu_parts=22152718%2Csws-hb%2Cw3schools.com%2Ctry_it_leaderboard&amp;enc_prev_ius=%2F0%2F1%2F%2F2%2F%2F3&amp;prev_iu_szs=728x90&amp;rcs=35&amp;eri=1&amp;cust_params=content%3Dtryhowto&amp;cookie_enabled=1&amp;bc=7&amp;abxe=1&amp;lmt=1541239607&amp;dt=1541247643321&amp;dlt=1541246225110&amp;idt=4522&amp;frm=20&amp;biw=1366&amp;bih=657&amp;oid=3&amp;adxs=319&amp;adys=5&amp;adks=3132712143&amp;ucis=1z&amp;gut=v2&amp;ifi=71&amp;u_tz=330&amp;u_his=1&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Ftryit.asp%3Ffilename%3Dtryhow_js_topnav&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_js_topnav_responsive.asp&amp;dssz=55&amp;icsg=3002399575294624&amp;std=0&amp;vis=1&amp;dmc=2&amp;scr_x=0&amp;scr_y=0&amp;psz=1366x-1&amp;msz=1366x-1&amp;ga_vid=1414308836.1537811604&amp;ga_sid=1541246231&amp;ga_hid=1566141569&amp;fws=4"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;pvsid=1542305400119667&amp;correlator=337648044795041&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy35&amp;impl=fifs&amp;json_a=1&amp;eid=21061864%2C21062716&amp;vrg=271&amp;guci=2.2.0.0.2.2.0&amp;plat=1%3A67108864%2C2%3A67108864&amp;sc=1&amp;sfv=1-0-30&amp;iu_parts=22152718%2Csws-hb%2Cw3schools.com%2Ctry_it_leaderboard&amp;enc_prev_ius=%2F0%2F1%2F%2F2%2F%2F3&amp;prev_iu_szs=728x90&amp;rcs=34&amp;eri=1&amp;cust_params=content%3Dtryhowto&amp;cookie_enabled=1&amp;bc=7&amp;abxe=1&amp;lmt=1541239607&amp;dt=1541247633694&amp;dlt=1541246225110&amp;idt=4522&amp;frm=20&amp;biw=1366&amp;bih=657&amp;oid=3&amp;adxs=319&amp;adys=5&amp;adks=3132712143&amp;ucis=1x&amp;gut=v2&amp;ifi=69&amp;u_tz=330&amp;u_his=1&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Ftryit.asp%3Ffilename%3Dtryhow_js_topnav&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_js_topnav_responsive.asp&amp;dssz=54&amp;icsg=3002399575294624&amp;std=0&amp;vis=1&amp;dmc=2&amp;scr_x=0&amp;scr_y=0&amp;psz=1366x-1&amp;msz=1366x-1&amp;ga_vid=1414308836.1537811604&amp;ga_sid=1541246231&amp;ga_hid=1566141569&amp;fws=4"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;pvsid=1542305400119667&amp;correlator=1340623835532524&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy34&amp;impl=fifs&amp;json_a=1&amp;eid=21061864%2C21062716&amp;vrg=271&amp;guci=2.2.0.0.2.2.0&amp;plat=1%3A67108864%2C2%3A67108864&amp;sc=1&amp;sfv=1-0-30&amp;iu_parts=22152718%2Csws-hb%2Cw3schools.com%2Ctry_it_leaderboard&amp;enc_prev_ius=%2F0%2F1%2F%2F2%2F%2F3&amp;prev_iu_szs=728x90&amp;rcs=33&amp;eri=1&amp;cust_params=content%3Dtryhowto&amp;cookie_enabled=1&amp;bc=7&amp;abxe=1&amp;lmt=1541239607&amp;dt=1541247515357&amp;dlt=1541246225110&amp;idt=4522&amp;frm=20&amp;biw=1366&amp;bih=657&amp;oid=3&amp;adxs=319&amp;adys=5&amp;adks=3132712143&amp;ucis=1v&amp;gut=v2&amp;ifi=67&amp;u_tz=330&amp;u_his=1&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Ftryit.asp%3Ffilename%3Dtryhow_js_topnav&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_js_topnav_responsive.asp&amp;dssz=53&amp;icsg=3002399575294624&amp;std=0&amp;vis=1&amp;dmc=2&amp;scr_x=0&amp;scr_y=0&amp;psz=1366x-1&amp;msz=1366x-1&amp;ga_vid=1414308836.1537811604&amp;ga_sid=1541246231&amp;ga_hid=1566141569&amp;fws=4"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;pvsid=1542305400119667&amp;correlator=2774814476128156&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy33&amp;impl=fifs&amp;json_a=1&amp;eid=21061864%2C21062716&amp;vrg=271&amp;guci=2.2.0.0.2.2.0&amp;plat=1%3A67108864%2C2%3A67108864&amp;sc=1&amp;sfv=1-0-30&amp;iu_parts=22152718%2Csws-hb%2Cw3schools.com%2Ctry_it_leaderboard&amp;enc_prev_ius=%2F0%2F1%2F%2F2%2F%2F3&amp;prev_iu_szs=728x90&amp;rcs=32&amp;eri=1&amp;cust_params=content%3Dtryhowto&amp;cookie_enabled=1&amp;bc=7&amp;abxe=1&amp;lmt=1541239607&amp;dt=1541247489636&amp;dlt=1541246225110&amp;idt=4522&amp;frm=20&amp;biw=1366&amp;bih=657&amp;oid=3&amp;adxs=319&amp;adys=5&amp;adks=3132712143&amp;ucis=1t&amp;gut=v2&amp;ifi=65&amp;u_tz=330&amp;u_his=1&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Ftryit.asp%3Ffilename%3Dtryhow_js_topnav&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_js_topnav_responsive.asp&amp;dssz=52&amp;icsg=3002399575294624&amp;std=0&amp;vis=1&amp;dmc=2&amp;scr_x=0&amp;scr_y=0&amp;psz=1366x-1&amp;msz=1366x-1&amp;ga_vid=1414308836.1537811604&amp;ga_sid=1541246231&amp;ga_hid=1566141569&amp;fws=4"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;pvsid=1542305400119667&amp;correlator=1969091763966191&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy32&amp;impl=fifs&amp;json_a=1&amp;eid=21061864%2C21062716&amp;vrg=271&amp;guci=2.2.0.0.2.2.0&amp;plat=1%3A67108864%2C2%3A67108864&amp;sc=1&amp;sfv=1-0-30&amp;iu_parts=22152718%2Csws-hb%2Cw3schools.com%2Ctry_it_leaderboard&amp;enc_prev_ius=%2F0%2F1%2F%2F2%2F%2F3&amp;prev_iu_szs=728x90&amp;rcs=31&amp;eri=1&amp;cust_params=content%3Dtryhowto&amp;cookie_enabled=1&amp;bc=7&amp;abxe=1&amp;lmt=1541239607&amp;dt=1541247393020&amp;dlt=1541246225110&amp;idt=4522&amp;frm=20&amp;biw=1366&amp;bih=657&amp;oid=3&amp;adxs=319&amp;adys=5&amp;adks=3132712143&amp;ucis=1r&amp;gut=v2&amp;ifi=63&amp;u_tz=330&amp;u_his=1&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Ftryit.asp%3Ffilename%3Dtryhow_js_topnav&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_js_topnav_responsive.asp&amp;dssz=51&amp;icsg=3002399575294624&amp;std=0&amp;vis=1&amp;dmc=2&amp;scr_x=0&amp;scr_y=0&amp;psz=1366x-1&amp;msz=1366x-1&amp;ga_vid=1414308836.1537811604&amp;ga_sid=1541246231&amp;ga_hid=1566141569&amp;fws=4"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;pvsid=1542305400119667&amp;correlator=3839656601628901&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy31&amp;impl=fifs&amp;json_a=1&amp;eid=21061864%2C21062716&amp;vrg=271&amp;guci=2.2.0.0.2.2.0&amp;plat=1%3A67108864%2C2%3A67108864&amp;sc=1&amp;sfv=1-0-30&amp;iu_parts=22152718%2Csws-hb%2Cw3schools.com%2Ctry_it_leaderboard&amp;enc_prev_ius=%2F0%2F1%2F%2F2%2F%2F3&amp;prev_iu_szs=728x90&amp;rcs=30&amp;eri=1&amp;cust_params=content%3Dtryhowto&amp;cookie_enabled=1&amp;bc=7&amp;abxe=1&amp;lmt=1541239607&amp;dt=1541247388819&amp;dlt=1541246225110&amp;idt=4522&amp;frm=20&amp;biw=1366&amp;bih=657&amp;oid=3&amp;adxs=319&amp;adys=5&amp;adks=3132712143&amp;ucis=1p&amp;gut=v2&amp;ifi=61&amp;u_tz=330&amp;u_his=1&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Ftryit.asp%3Ffilename%3Dtryhow_js_topnav&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_js_topnav_responsive.asp&amp;dssz=50&amp;icsg=3002399575294624&amp;std=0&amp;vis=1&amp;dmc=2&amp;scr_x=0&amp;scr_y=0&amp;psz=1366x-1&amp;msz=1366x-1&amp;ga_vid=1414308836.1537811604&amp;ga_sid=1541246231&amp;ga_hid=1566141569&amp;fws=4"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;pvsid=1542305400119667&amp;correlator=885755528808169&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy30&amp;impl=fifs&amp;json_a=1&amp;eid=21061864%2C21062716&amp;vrg=271&amp;guci=2.2.0.0.2.2.0&amp;plat=1%3A67108864%2C2%3A67108864&amp;sc=1&amp;sfv=1-0-30&amp;iu_parts=22152718%2Csws-hb%2Cw3schools.com%2Ctry_it_leaderboard&amp;enc_prev_ius=%2F0%2F1%2F%2F2%2F%2F3&amp;prev_iu_szs=728x90&amp;rcs=29&amp;eri=1&amp;cust_params=content%3Dtryhowto&amp;cookie_enabled=1&amp;bc=7&amp;abxe=1&amp;lmt=1541239607&amp;dt=1541247386769&amp;dlt=1541246225110&amp;idt=4522&amp;frm=20&amp;biw=1366&amp;bih=657&amp;oid=3&amp;adxs=319&amp;adys=5&amp;adks=3132712143&amp;ucis=1n&amp;gut=v2&amp;ifi=59&amp;u_tz=330&amp;u_his=1&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Ftryit.asp%3Ffilename%3Dtryhow_js_topnav&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_js_topnav_responsive.asp&amp;dssz=49&amp;icsg=3002399575294624&amp;std=0&amp;vis=1&amp;dmc=2&amp;scr_x=0&amp;scr_y=0&amp;psz=1366x-1&amp;msz=1366x-1&amp;ga_vid=1414308836.1537811604&amp;ga_sid=1541246231&amp;ga_hid=1566141569&amp;fws=4"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;pvsid=1542305400119667&amp;correlator=3910963987697083&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy29&amp;impl=fifs&amp;json_a=1&amp;eid=21061864%2C21062716&amp;vrg=271&amp;guci=2.2.0.0.2.2.0&amp;plat=1%3A67108864%2C2%3A67108864&amp;sc=1&amp;sfv=1-0-30&amp;iu_parts=22152718%2Csws-hb%2Cw3schools.com%2Ctry_it_leaderboard&amp;enc_prev_ius=%2F0%2F1%2F%2F2%2F%2F3&amp;prev_iu_szs=728x90&amp;rcs=28&amp;eri=1&amp;cust_params=content%3Dtryhowto&amp;cookie_enabled=1&amp;bc=7&amp;abxe=1&amp;lmt=1541239607&amp;dt=1541247377590&amp;dlt=1541246225110&amp;idt=4522&amp;frm=20&amp;biw=1366&amp;bih=657&amp;oid=3&amp;adxs=319&amp;adys=5&amp;adks=3132712143&amp;ucis=1l&amp;gut=v2&amp;ifi=57&amp;u_tz=330&amp;u_his=1&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Ftryit.asp%3Ffilename%3Dtryhow_js_topnav&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_js_topnav_responsive.asp&amp;dssz=48&amp;icsg=3002399575294624&amp;std=0&amp;vis=1&amp;dmc=2&amp;scr_x=0&amp;scr_y=0&amp;psz=1366x-1&amp;msz=1366x-1&amp;ga_vid=1414308836.1537811604&amp;ga_sid=1541246231&amp;ga_hid=1566141569&amp;fws=4"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;pvsid=1542305400119667&amp;correlator=94813409436785&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy28&amp;impl=fifs&amp;json_a=1&amp;eid=21061864%2C21062716&amp;vrg=271&amp;guci=2.2.0.0.2.2.0&amp;plat=1%3A67108864%2C2%3A67108864&amp;sc=1&amp;sfv=1-0-30&amp;iu_parts=22152718%2Csws-hb%2Cw3schools.com%2Ctry_it_leaderboard&amp;enc_prev_ius=%2F0%2F1%2F%2F2%2F%2F3&amp;prev_iu_szs=728x90&amp;rcs=27&amp;eri=1&amp;cust_params=content%3Dtryhowto&amp;cookie_enabled=1&amp;bc=7&amp;abxe=1&amp;lmt=1541239607&amp;dt=1541247348061&amp;dlt=1541246225110&amp;idt=4522&amp;frm=20&amp;biw=1366&amp;bih=657&amp;oid=3&amp;adxs=319&amp;adys=5&amp;adks=3132712143&amp;ucis=1j&amp;gut=v2&amp;ifi=55&amp;u_tz=330&amp;u_his=1&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Ftryit.asp%3Ffilename%3Dtryhow_js_topnav&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_js_topnav_responsive.asp&amp;dssz=47&amp;icsg=3002399575294624&amp;std=0&amp;vis=1&amp;dmc=2&amp;scr_x=0&amp;scr_y=0&amp;psz=1366x-1&amp;msz=1366x-1&amp;ga_vid=1414308836.1537811604&amp;ga_sid=1541246231&amp;ga_hid=1566141569&amp;fws=4"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;pvsid=1542305400119667&amp;correlator=603296578945599&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy27&amp;impl=fifs&amp;json_a=1&amp;eid=21061864%2C21062716&amp;vrg=271&amp;guci=2.2.0.0.2.2.0&amp;plat=1%3A67108864%2C2%3A67108864&amp;sc=1&amp;sfv=1-0-30&amp;iu_parts=22152718%2Csws-hb%2Cw3schools.com%2Ctry_it_leaderboard&amp;enc_prev_ius=%2F0%2F1%2F%2F2%2F%2F3&amp;prev_iu_szs=728x90&amp;rcs=26&amp;eri=1&amp;cust_params=content%3Dtryhowto&amp;cookie_enabled=1&amp;bc=7&amp;abxe=1&amp;lmt=1541239607&amp;dt=1541247338992&amp;dlt=1541246225110&amp;idt=4522&amp;frm=20&amp;biw=1366&amp;bih=657&amp;oid=3&amp;adxs=319&amp;adys=5&amp;adks=3132712143&amp;ucis=1h&amp;gut=v2&amp;ifi=53&amp;u_tz=330&amp;u_his=1&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Ftryit.asp%3Ffilename%3Dtryhow_js_topnav&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_js_topnav_responsive.asp&amp;dssz=46&amp;icsg=3002399575294624&amp;std=0&amp;vis=1&amp;dmc=2&amp;scr_x=0&amp;scr_y=0&amp;psz=1366x-1&amp;msz=1366x-1&amp;ga_vid=1414308836.1537811604&amp;ga_sid=1541246231&amp;ga_hid=1566141569&amp;fws=4"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;pvsid=1542305400119667&amp;correlator=698224256907526&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy26&amp;impl=fifs&amp;json_a=1&amp;eid=21061864%2C21062716&amp;vrg=271&amp;guci=2.2.0.0.2.2.0&amp;plat=1%3A67108864%2C2%3A67108864&amp;sc=1&amp;sfv=1-0-30&amp;iu_parts=22152718%2Csws-hb%2Cw3schools.com%2Ctry_it_leaderboard&amp;enc_prev_ius=%2F0%2F1%2F%2F2%2F%2F3&amp;prev_iu_szs=728x90&amp;rcs=25&amp;eri=1&amp;cust_params=content%3Dtryhowto&amp;cookie_enabled=1&amp;bc=7&amp;abxe=1&amp;lmt=1541239607&amp;dt=1541247179186&amp;dlt=1541246225110&amp;idt=4522&amp;frm=20&amp;biw=1366&amp;bih=657&amp;oid=3&amp;adxs=319&amp;adys=5&amp;adks=3132712143&amp;ucis=1f&amp;gut=v2&amp;ifi=51&amp;u_tz=330&amp;u_his=1&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Ftryit.asp%3Ffilename%3Dtryhow_js_topnav&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_js_topnav_responsive.asp&amp;dssz=45&amp;icsg=3002399575294624&amp;std=0&amp;vis=1&amp;dmc=2&amp;scr_x=0&amp;scr_y=0&amp;psz=1366x-1&amp;msz=1366x-1&amp;ga_vid=1414308836.1537811604&amp;ga_sid=1541246231&amp;ga_hid=1566141569&amp;fws=4"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;pvsid=1542305400119667&amp;correlator=2653739415365649&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy25&amp;impl=fifs&amp;json_a=1&amp;eid=21061864%2C21062716&amp;vrg=271&amp;guci=2.2.0.0.2.2.0&amp;plat=1%3A67108864%2C2%3A67108864&amp;sc=1&amp;sfv=1-0-30&amp;iu_parts=22152718%2Csws-hb%2Cw3schools.com%2Ctry_it_leaderboard&amp;enc_prev_ius=%2F0%2F1%2F%2F2%2F%2F3&amp;prev_iu_szs=728x90&amp;rcs=24&amp;eri=1&amp;cust_params=content%3Dtryhowto&amp;cookie_enabled=1&amp;bc=7&amp;abxe=1&amp;lmt=1541239607&amp;dt=1541247168563&amp;dlt=1541246225110&amp;idt=4522&amp;frm=20&amp;biw=1366&amp;bih=657&amp;oid=3&amp;adxs=319&amp;adys=5&amp;adks=3132712143&amp;ucis=1d&amp;gut=v2&amp;ifi=49&amp;u_tz=330&amp;u_his=1&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Ftryit.asp%3Ffilename%3Dtryhow_js_topnav&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_js_topnav_responsive.asp&amp;dssz=44&amp;icsg=3002399575294624&amp;std=0&amp;vis=1&amp;dmc=2&amp;scr_x=0&amp;scr_y=0&amp;psz=1366x-1&amp;msz=1366x-1&amp;ga_vid=1414308836.1537811604&amp;ga_sid=1541246231&amp;ga_hid=1566141569&amp;fws=4"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;pvsid=1542305400119667&amp;correlator=1549135874554901&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy24&amp;impl=fifs&amp;json_a=1&amp;eid=21061864%2C21062716&amp;vrg=271&amp;guci=2.2.0.0.2.2.0&amp;plat=1%3A67108864%2C2%3A67108864&amp;sc=1&amp;sfv=1-0-30&amp;iu_parts=22152718%2Csws-hb%2Cw3schools.com%2Ctry_it_leaderboard&amp;enc_prev_ius=%2F0%2F1%2F%2F2%2F%2F3&amp;prev_iu_szs=728x90&amp;rcs=23&amp;eri=1&amp;cust_params=content%3Dtryhowto&amp;cookie_enabled=1&amp;bc=7&amp;abxe=1&amp;lmt=1541239607&amp;dt=1541247164308&amp;dlt=1541246225110&amp;idt=4522&amp;frm=20&amp;biw=1366&amp;bih=657&amp;oid=3&amp;adxs=319&amp;adys=5&amp;adks=3132712143&amp;ucis=1b&amp;gut=v2&amp;ifi=47&amp;u_tz=330&amp;u_his=1&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Ftryit.asp%3Ffilename%3Dtryhow_js_topnav&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_js_topnav_responsive.asp&amp;dssz=43&amp;icsg=3002399575294624&amp;std=0&amp;vis=1&amp;dmc=2&amp;scr_x=0&amp;scr_y=0&amp;psz=1366x-1&amp;msz=1366x-1&amp;ga_vid=1414308836.1537811604&amp;ga_sid=1541246231&amp;ga_hid=1566141569&amp;fws=4"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;pvsid=1542305400119667&amp;correlator=428888521739480&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy23&amp;impl=fifs&amp;json_a=1&amp;eid=21061864%2C21062716&amp;vrg=271&amp;guci=2.2.0.0.2.2.0&amp;plat=1%3A67108864%2C2%3A67108864&amp;sc=1&amp;sfv=1-0-30&amp;iu_parts=22152718%2Csws-hb%2Cw3schools.com%2Ctry_it_leaderboard&amp;enc_prev_ius=%2F0%2F1%2F%2F2%2F%2F3&amp;prev_iu_szs=728x90&amp;rcs=22&amp;eri=1&amp;cust_params=content%3Dtryhowto&amp;cookie_enabled=1&amp;bc=7&amp;abxe=1&amp;lmt=1541239607&amp;dt=1541247157305&amp;dlt=1541246225110&amp;idt=4522&amp;frm=20&amp;biw=1366&amp;bih=657&amp;oid=3&amp;adxs=319&amp;adys=5&amp;adks=3132712143&amp;ucis=19&amp;gut=v2&amp;ifi=45&amp;u_tz=330&amp;u_his=1&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Ftryit.asp%3Ffilename%3Dtryhow_js_topnav&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_js_topnav_responsive.asp&amp;dssz=42&amp;icsg=3002399575294624&amp;std=0&amp;vis=1&amp;dmc=2&amp;scr_x=0&amp;scr_y=0&amp;psz=1366x-1&amp;msz=1366x-1&amp;ga_vid=1414308836.1537811604&amp;ga_sid=1541246231&amp;ga_hid=1566141569&amp;fws=4"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;pvsid=1542305400119667&amp;correlator=2976056638332812&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy22&amp;impl=fifs&amp;json_a=1&amp;eid=21061864%2C21062716&amp;vrg=271&amp;guci=2.2.0.0.2.2.0&amp;plat=1%3A67108864%2C2%3A67108864&amp;sc=1&amp;sfv=1-0-30&amp;iu_parts=22152718%2Csws-hb%2Cw3schools.com%2Ctry_it_leaderboard&amp;enc_prev_ius=%2F0%2F1%2F%2F2%2F%2F3&amp;prev_iu_szs=728x90&amp;rcs=21&amp;eri=1&amp;cust_params=content%3Dtryhowto&amp;cookie_enabled=1&amp;bc=7&amp;abxe=1&amp;lmt=1541239607&amp;dt=1541247152729&amp;dlt=1541246225110&amp;idt=4522&amp;frm=20&amp;biw=1366&amp;bih=657&amp;oid=3&amp;adxs=319&amp;adys=5&amp;adks=3132712143&amp;ucis=17&amp;gut=v2&amp;ifi=43&amp;u_tz=330&amp;u_his=1&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Ftryit.asp%3Ffilename%3Dtryhow_js_topnav&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_js_topnav_responsive.asp&amp;dssz=41&amp;icsg=3002399575294624&amp;std=0&amp;vis=1&amp;dmc=2&amp;scr_x=0&amp;scr_y=0&amp;psz=1366x-1&amp;msz=1366x-1&amp;ga_vid=1414308836.1537811604&amp;ga_sid=1541246231&amp;ga_hid=1566141569&amp;fws=4"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;pvsid=1542305400119667&amp;correlator=3707349790558312&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy21&amp;impl=fifs&amp;json_a=1&amp;eid=21061864%2C21062716&amp;vrg=271&amp;guci=2.2.0.0.2.2.0&amp;plat=1%3A67108864%2C2%3A67108864&amp;sc=1&amp;sfv=1-0-30&amp;iu_parts=22152718%2Csws-hb%2Cw3schools.com%2Ctry_it_leaderboard&amp;enc_prev_ius=%2F0%2F1%2F%2F2%2F%2F3&amp;prev_iu_szs=728x90&amp;rcs=20&amp;eri=1&amp;cust_params=content%3Dtryhowto&amp;cookie_enabled=1&amp;bc=7&amp;abxe=1&amp;lmt=1541239607&amp;dt=1541247147029&amp;dlt=1541246225110&amp;idt=4522&amp;frm=20&amp;biw=1366&amp;bih=657&amp;oid=3&amp;adxs=319&amp;adys=5&amp;adks=3132712143&amp;ucis=15&amp;gut=v2&amp;ifi=41&amp;u_tz=330&amp;u_his=1&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Ftryit.asp%3Ffilename%3Dtryhow_js_topnav&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_js_topnav_responsive.asp&amp;dssz=40&amp;icsg=3002399575294624&amp;std=0&amp;vis=1&amp;dmc=2&amp;scr_x=0&amp;scr_y=0&amp;psz=1366x-1&amp;msz=1366x-1&amp;ga_vid=1414308836.1537811604&amp;ga_sid=1541246231&amp;ga_hid=1566141569&amp;fws=4"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;pvsid=1542305400119667&amp;correlator=4113140117102858&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy20&amp;impl=fifs&amp;json_a=1&amp;eid=21061864%2C21062716&amp;vrg=271&amp;guci=2.2.0.0.2.2.0&amp;plat=1%3A67108864%2C2%3A67108864&amp;sc=1&amp;sfv=1-0-30&amp;iu_parts=22152718%2Csws-hb%2Cw3schools.com%2Ctry_it_leaderboard&amp;enc_prev_ius=%2F0%2F1%2F%2F2%2F%2F3&amp;prev_iu_szs=728x90&amp;rcs=19&amp;eri=1&amp;cust_params=content%3Dtryhowto&amp;cookie_enabled=1&amp;bc=7&amp;abxe=1&amp;lmt=1541239607&amp;dt=1541247144982&amp;dlt=1541246225110&amp;idt=4522&amp;frm=20&amp;biw=1366&amp;bih=657&amp;oid=3&amp;adxs=319&amp;adys=5&amp;adks=3132712143&amp;ucis=13&amp;gut=v2&amp;ifi=39&amp;u_tz=330&amp;u_his=1&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Ftryit.asp%3Ffilename%3Dtryhow_js_topnav&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_js_topnav_responsive.asp&amp;dssz=39&amp;icsg=3002399575294624&amp;std=0&amp;vis=1&amp;dmc=2&amp;scr_x=0&amp;scr_y=0&amp;psz=1366x-1&amp;msz=1366x-1&amp;ga_vid=1414308836.1537811604&amp;ga_sid=1541246231&amp;ga_hid=1566141569&amp;fws=4"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;pvsid=1542305400119667&amp;correlator=3806732979263477&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy19&amp;impl=fifs&amp;json_a=1&amp;eid=21061864%2C21062716&amp;vrg=271&amp;guci=2.2.0.0.2.2.0&amp;plat=1%3A67108864%2C2%3A67108864&amp;sc=1&amp;sfv=1-0-30&amp;iu_parts=22152718%2Csws-hb%2Cw3schools.com%2Ctry_it_leaderboard&amp;enc_prev_ius=%2F0%2F1%2F%2F2%2F%2F3&amp;prev_iu_szs=728x90&amp;rcs=18&amp;eri=1&amp;cust_params=content%3Dtryhowto&amp;cookie_enabled=1&amp;bc=7&amp;abxe=1&amp;lmt=1541239607&amp;dt=1541247138845&amp;dlt=1541246225110&amp;idt=4522&amp;frm=20&amp;biw=1366&amp;bih=657&amp;oid=3&amp;adxs=319&amp;adys=5&amp;adks=3132712143&amp;ucis=11&amp;gut=v2&amp;ifi=37&amp;u_tz=330&amp;u_his=1&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Ftryit.asp%3Ffilename%3Dtryhow_js_topnav&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_js_topnav_responsive.asp&amp;dssz=38&amp;icsg=3002399575294624&amp;std=0&amp;vis=1&amp;dmc=2&amp;scr_x=0&amp;scr_y=0&amp;psz=1366x-1&amp;msz=1366x-1&amp;ga_vid=1414308836.1537811604&amp;ga_sid=1541246231&amp;ga_hid=1566141569&amp;fws=4"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;pvsid=1542305400119667&amp;correlator=4401610971874673&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy18&amp;impl=fifs&amp;json_a=1&amp;eid=21061864%2C21062716&amp;vrg=271&amp;guci=2.2.0.0.2.2.0&amp;plat=1%3A67108864%2C2%3A67108864&amp;sc=1&amp;sfv=1-0-30&amp;iu_parts=22152718%2Csws-hb%2Cw3schools.com%2Ctry_it_leaderboard&amp;enc_prev_ius=%2F0%2F1%2F%2F2%2F%2F3&amp;prev_iu_szs=728x90&amp;rcs=17&amp;eri=1&amp;cust_params=content%3Dtryhowto&amp;cookie_enabled=1&amp;bc=7&amp;abxe=1&amp;lmt=1541239607&amp;dt=1541247136801&amp;dlt=1541246225110&amp;idt=4522&amp;frm=20&amp;biw=1366&amp;bih=657&amp;oid=3&amp;adxs=319&amp;adys=5&amp;adks=3132712143&amp;ucis=z&amp;gut=v2&amp;ifi=35&amp;u_tz=330&amp;u_his=1&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Ftryit.asp%3Ffilename%3Dtryhow_js_topnav&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_js_topnav_responsive.asp&amp;dssz=37&amp;icsg=3002399575294624&amp;std=0&amp;vis=1&amp;dmc=2&amp;scr_x=0&amp;scr_y=0&amp;psz=1366x-1&amp;msz=1366x-1&amp;ga_vid=1414308836.1537811604&amp;ga_sid=1541246231&amp;ga_hid=1566141569&amp;fws=4"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;pvsid=1542305400119667&amp;correlator=802772143404900&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy17&amp;impl=fifs&amp;json_a=1&amp;eid=21061864%2C21062716&amp;vrg=271&amp;guci=2.2.0.0.2.2.0&amp;plat=1%3A67108864%2C2%3A67108864&amp;sc=1&amp;sfv=1-0-30&amp;iu_parts=22152718%2Csws-hb%2Cw3schools.com%2Ctry_it_leaderboard&amp;enc_prev_ius=%2F0%2F1%2F%2F2%2F%2F3&amp;prev_iu_szs=728x90&amp;rcs=16&amp;eri=1&amp;cust_params=content%3Dtryhowto&amp;cookie_enabled=1&amp;bc=7&amp;abxe=1&amp;lmt=1541239607&amp;dt=1541247134764&amp;dlt=1541246225110&amp;idt=4522&amp;frm=20&amp;biw=1366&amp;bih=657&amp;oid=3&amp;adxs=319&amp;adys=5&amp;adks=3132712143&amp;ucis=x&amp;gut=v2&amp;ifi=33&amp;u_tz=330&amp;u_his=1&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Ftryit.asp%3Ffilename%3Dtryhow_js_topnav&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_js_topnav_responsive.asp&amp;dssz=36&amp;icsg=3002399575294624&amp;std=0&amp;vis=1&amp;dmc=2&amp;scr_x=0&amp;scr_y=0&amp;psz=1366x-1&amp;msz=1366x-1&amp;ga_vid=1414308836.1537811604&amp;ga_sid=1541246231&amp;ga_hid=1566141569&amp;fws=4"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;pvsid=1542305400119667&amp;correlator=4249319141031494&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy16&amp;impl=fifs&amp;json_a=1&amp;eid=21061864%2C21062716&amp;vrg=271&amp;guci=2.2.0.0.2.2.0&amp;plat=1%3A67108864%2C2%3A67108864&amp;sc=1&amp;sfv=1-0-30&amp;iu_parts=22152718%2Csws-hb%2Cw3schools.com%2Ctry_it_leaderboard&amp;enc_prev_ius=%2F0%2F1%2F%2F2%2F%2F3&amp;prev_iu_szs=728x90&amp;rcs=15&amp;eri=1&amp;cust_params=content%3Dtryhowto&amp;cookie_enabled=1&amp;bc=7&amp;abxe=1&amp;lmt=1541239607&amp;dt=1541247132692&amp;dlt=1541246225110&amp;idt=4522&amp;frm=20&amp;biw=1366&amp;bih=657&amp;oid=3&amp;adxs=319&amp;adys=5&amp;adks=3132712143&amp;ucis=v&amp;gut=v2&amp;ifi=31&amp;u_tz=330&amp;u_his=1&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Ftryit.asp%3Ffilename%3Dtryhow_js_topnav&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_js_topnav_responsive.asp&amp;dssz=35&amp;icsg=3002399575294624&amp;std=0&amp;vis=1&amp;dmc=2&amp;scr_x=0&amp;scr_y=0&amp;psz=1366x-1&amp;msz=1366x-1&amp;ga_vid=1414308836.1537811604&amp;ga_sid=1541246231&amp;ga_hid=1566141569&amp;fws=4"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;pvsid=1542305400119667&amp;correlator=1095304477519861&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy15&amp;impl=fifs&amp;json_a=1&amp;eid=21061864%2C21062716&amp;vrg=271&amp;guci=2.2.0.0.2.2.0&amp;plat=1%3A67108864%2C2%3A67108864&amp;sc=1&amp;sfv=1-0-30&amp;iu_parts=22152718%2Csws-hb%2Cw3schools.com%2Ctry_it_leaderboard&amp;enc_prev_ius=%2F0%2F1%2F%2F2%2F%2F3&amp;prev_iu_szs=728x90&amp;rcs=14&amp;eri=1&amp;cust_params=content%3Dtryhowto&amp;cookie_enabled=1&amp;bc=7&amp;abxe=1&amp;lmt=1541239607&amp;dt=1541247130647&amp;dlt=1541246225110&amp;idt=4522&amp;frm=20&amp;biw=1366&amp;bih=657&amp;oid=3&amp;adxs=319&amp;adys=5&amp;adks=3132712143&amp;ucis=t&amp;gut=v2&amp;ifi=29&amp;u_tz=330&amp;u_his=1&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Ftryit.asp%3Ffilename%3Dtryhow_js_topnav&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_js_topnav_responsive.asp&amp;dssz=34&amp;icsg=3002399575294624&amp;std=0&amp;vis=1&amp;dmc=2&amp;scr_x=0&amp;scr_y=0&amp;psz=1366x-1&amp;msz=1366x-1&amp;ga_vid=1414308836.1537811604&amp;ga_sid=1541246231&amp;ga_hid=1566141569&amp;fws=4"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;pvsid=1542305400119667&amp;correlator=2815315132297895&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy14&amp;impl=fifs&amp;json_a=1&amp;eid=21061864%2C21062716&amp;vrg=271&amp;guci=2.2.0.0.2.2.0&amp;plat=1%3A67108864%2C2%3A67108864&amp;sc=1&amp;sfv=1-0-30&amp;iu_parts=22152718%2Csws-hb%2Cw3schools.com%2Ctry_it_leaderboard&amp;enc_prev_ius=%2F0%2F1%2F%2F2%2F%2F3&amp;prev_iu_szs=728x90&amp;rcs=13&amp;eri=1&amp;cust_params=content%3Dtryhowto&amp;cookie_enabled=1&amp;bc=7&amp;abxe=1&amp;lmt=1541239607&amp;dt=1541247124418&amp;dlt=1541246225110&amp;idt=4522&amp;frm=20&amp;biw=1366&amp;bih=657&amp;oid=3&amp;adxs=319&amp;adys=5&amp;adks=3132712143&amp;ucis=r&amp;gut=v2&amp;ifi=27&amp;u_tz=330&amp;u_his=1&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Ftryit.asp%3Ffilename%3Dtryhow_js_topnav&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_js_topnav_responsive.asp&amp;dssz=33&amp;icsg=3002399575294624&amp;std=0&amp;vis=1&amp;dmc=2&amp;scr_x=0&amp;scr_y=0&amp;psz=1366x-1&amp;msz=1366x-1&amp;ga_vid=1414308836.1537811604&amp;ga_sid=1541246231&amp;ga_hid=1566141569&amp;fws=4"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;pvsid=1542305400119667&amp;correlator=3704780948495547&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy13&amp;impl=fifs&amp;json_a=1&amp;eid=21061864%2C21062716&amp;vrg=271&amp;guci=2.2.0.0.2.2.0&amp;plat=1%3A67108864%2C2%3A67108864&amp;sc=1&amp;sfv=1-0-30&amp;iu_parts=22152718%2Csws-hb%2Cw3schools.com%2Ctry_it_leaderboard&amp;enc_prev_ius=%2F0%2F1%2F%2F2%2F%2F3&amp;prev_iu_szs=728x90&amp;rcs=12&amp;eri=1&amp;cust_params=content%3Dtryhowto&amp;cookie_enabled=1&amp;bc=7&amp;abxe=1&amp;lmt=1541239607&amp;dt=1541247118351&amp;dlt=1541246225110&amp;idt=4522&amp;frm=20&amp;biw=1366&amp;bih=657&amp;oid=3&amp;adxs=319&amp;adys=5&amp;adks=3132712143&amp;ucis=p&amp;gut=v2&amp;ifi=25&amp;u_tz=330&amp;u_his=1&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Ftryit.asp%3Ffilename%3Dtryhow_js_topnav&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_js_topnav_responsive.asp&amp;dssz=32&amp;icsg=3002399575294624&amp;std=0&amp;vis=1&amp;dmc=2&amp;scr_x=0&amp;scr_y=0&amp;psz=1366x-1&amp;msz=1366x-1&amp;ga_vid=1414308836.1537811604&amp;ga_sid=1541246231&amp;ga_hid=1566141569&amp;fws=4"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;pvsid=1542305400119667&amp;correlator=60226791142305&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy12&amp;impl=fifs&amp;json_a=1&amp;eid=21061864%2C21062716&amp;vrg=271&amp;guci=2.2.0.0.2.2.0&amp;plat=1%3A67108864%2C2%3A67108864&amp;sc=1&amp;sfv=1-0-30&amp;iu_parts=22152718%2Csws-hb%2Cw3schools.com%2Ctry_it_leaderboard&amp;enc_prev_ius=%2F0%2F1%2F%2F2%2F%2F3&amp;prev_iu_szs=728x90&amp;rcs=11&amp;eri=1&amp;cust_params=content%3Dtryhowto&amp;cookie_enabled=1&amp;bc=7&amp;abxe=1&amp;lmt=1541239607&amp;dt=1541247110453&amp;dlt=1541246225110&amp;idt=4522&amp;frm=20&amp;biw=1366&amp;bih=657&amp;oid=3&amp;adxs=319&amp;adys=5&amp;adks=3132712143&amp;ucis=n&amp;gut=v2&amp;ifi=23&amp;u_tz=330&amp;u_his=1&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Ftryit.asp%3Ffilename%3Dtryhow_js_topnav&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_js_topnav_responsive.asp&amp;dssz=31&amp;icsg=3002399575294624&amp;std=0&amp;vis=1&amp;dmc=2&amp;scr_x=0&amp;scr_y=0&amp;psz=1366x-1&amp;msz=1366x-1&amp;ga_vid=1414308836.1537811604&amp;ga_sid=1541246231&amp;ga_hid=1566141569&amp;fws=4"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;pvsid=1542305400119667&amp;correlator=4157911779871583&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy11&amp;impl=fifs&amp;json_a=1&amp;eid=21061864%2C21062716&amp;vrg=271&amp;guci=2.2.0.0.2.2.0&amp;plat=1%3A67108864%2C2%3A67108864&amp;sc=1&amp;sfv=1-0-30&amp;iu_parts=22152718%2Csws-hb%2Cw3schools.com%2Ctry_it_leaderboard&amp;enc_prev_ius=%2F0%2F1%2F%2F2%2F%2F3&amp;prev_iu_szs=728x90&amp;rcs=10&amp;eri=1&amp;cust_params=content%3Dtryhowto&amp;cookie_enabled=1&amp;bc=7&amp;abxe=1&amp;lmt=1541239607&amp;dt=1541247101303&amp;dlt=1541246225110&amp;idt=4522&amp;frm=20&amp;biw=1366&amp;bih=657&amp;oid=3&amp;adxs=319&amp;adys=5&amp;adks=3132712143&amp;ucis=l&amp;gut=v2&amp;ifi=21&amp;u_tz=330&amp;u_his=1&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Ftryit.asp%3Ffilename%3Dtryhow_js_topnav&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_js_topnav_responsive.asp&amp;dssz=30&amp;icsg=750599761609376&amp;std=0&amp;vis=1&amp;dmc=2&amp;scr_x=0&amp;scr_y=0&amp;psz=1366x-1&amp;msz=1366x-1&amp;ga_vid=1414308836.1537811604&amp;ga_sid=1541246231&amp;ga_hid=1566141569&amp;fws=4"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;pvsid=1542305400119667&amp;correlator=307281704259377&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy10&amp;impl=fifs&amp;json_a=1&amp;eid=21061864%2C21062716&amp;vrg=271&amp;guci=2.2.0.0.2.2.0&amp;plat=1%3A67108864%2C2%3A67108864&amp;sc=1&amp;sfv=1-0-30&amp;iu_parts=22152718%2Csws-hb%2Cw3schools.com%2Ctry_it_leaderboard&amp;enc_prev_ius=%2F0%2F1%2F%2F2%2F%2F3&amp;prev_iu_szs=728x90&amp;rcs=9&amp;eri=1&amp;cust_params=content%3Dtryhowto&amp;cookie_enabled=1&amp;bc=7&amp;abxe=1&amp;lmt=1541239607&amp;dt=1541247078962&amp;dlt=1541246225110&amp;idt=4522&amp;frm=20&amp;biw=1366&amp;bih=657&amp;oid=3&amp;adxs=319&amp;adys=5&amp;adks=3132712143&amp;ucis=j&amp;gut=v2&amp;ifi=19&amp;u_tz=330&amp;u_his=1&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Ftryit.asp%3Ffilename%3Dtryhow_js_topnav&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_js_topnav_responsive.asp&amp;dssz=29&amp;icsg=187649808188064&amp;std=0&amp;vis=1&amp;dmc=2&amp;scr_x=0&amp;scr_y=0&amp;psz=1366x-1&amp;msz=1366x-1&amp;ga_vid=1414308836.1537811604&amp;ga_sid=1541246231&amp;ga_hid=1566141569&amp;fws=4"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;pvsid=1542305400119667&amp;correlator=4482403837291041&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy9&amp;impl=fifs&amp;json_a=1&amp;eid=21061864%2C21062716&amp;vrg=271&amp;guci=2.2.0.0.2.2.0&amp;plat=1%3A67108864%2C2%3A67108864&amp;sc=1&amp;sfv=1-0-30&amp;iu_parts=22152718%2Csws-hb%2Cw3schools.com%2Ctry_it_leaderboard&amp;enc_prev_ius=%2F0%2F1%2F%2F2%2F%2F3&amp;prev_iu_szs=728x90&amp;rcs=8&amp;eri=1&amp;cust_params=content%3Dtryhowto&amp;cookie_enabled=1&amp;bc=7&amp;abxe=1&amp;lmt=1541239607&amp;dt=1541247070922&amp;dlt=1541246225110&amp;idt=4522&amp;frm=20&amp;biw=1366&amp;bih=657&amp;oid=3&amp;adxs=319&amp;adys=5&amp;adks=3132712143&amp;ucis=h&amp;gut=v2&amp;ifi=17&amp;u_tz=330&amp;u_his=1&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Ftryit.asp%3Ffilename%3Dtryhow_js_topnav&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_js_topnav_responsive.asp&amp;dssz=28&amp;icsg=46912319832736&amp;std=0&amp;vis=1&amp;dmc=2&amp;scr_x=0&amp;scr_y=0&amp;psz=1366x-1&amp;msz=1366x-1&amp;ga_vid=1414308836.1537811604&amp;ga_sid=1541246231&amp;ga_hid=1566141569&amp;fws=4"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;pvsid=1542305400119667&amp;correlator=3847222870054068&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy8&amp;impl=fifs&amp;json_a=1&amp;eid=21061864%2C21062716&amp;vrg=271&amp;guci=2.2.0.0.2.2.0&amp;plat=1%3A67108864%2C2%3A67108864&amp;sc=1&amp;sfv=1-0-30&amp;iu_parts=22152718%2Csws-hb%2Cw3schools.com%2Ctry_it_leaderboard&amp;enc_prev_ius=%2F0%2F1%2F%2F2%2F%2F3&amp;prev_iu_szs=728x90&amp;rcs=7&amp;eri=1&amp;cust_params=content%3Dtryhowto&amp;cookie_enabled=1&amp;bc=7&amp;abxe=1&amp;lmt=1541239607&amp;dt=1541247047875&amp;dlt=1541246225110&amp;idt=4522&amp;frm=20&amp;biw=1366&amp;bih=657&amp;oid=3&amp;adxs=319&amp;adys=5&amp;adks=3132712143&amp;ucis=f&amp;gut=v2&amp;ifi=15&amp;u_tz=330&amp;u_his=1&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Ftryit.asp%3Ffilename%3Dtryhow_js_topnav&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_js_topnav_responsive.asp&amp;dssz=27&amp;icsg=11727947743904&amp;std=0&amp;vis=1&amp;dmc=2&amp;scr_x=0&amp;scr_y=0&amp;psz=1366x-1&amp;msz=1366x-1&amp;ga_vid=1414308836.1537811604&amp;ga_sid=1541246231&amp;ga_hid=1566141569&amp;fws=4"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;pvsid=1542305400119667&amp;correlator=4035125370547403&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy7&amp;impl=fifs&amp;json_a=1&amp;eid=21061864%2C21062716&amp;vrg=271&amp;guci=2.2.0.0.2.2.0&amp;plat=1%3A67108864%2C2%3A67108864&amp;sc=1&amp;sfv=1-0-30&amp;iu_parts=22152718%2Csws-hb%2Cw3schools.com%2Ctry_it_leaderboard&amp;enc_prev_ius=%2F0%2F1%2F%2F2%2F%2F3&amp;prev_iu_szs=728x90&amp;rcs=6&amp;eri=1&amp;cust_params=content%3Dtryhowto&amp;cookie_enabled=1&amp;bc=7&amp;abxe=1&amp;lmt=1541239607&amp;dt=1541247044221&amp;dlt=1541246225110&amp;idt=4522&amp;frm=20&amp;biw=1366&amp;bih=657&amp;oid=3&amp;adxs=319&amp;adys=5&amp;adks=3132712143&amp;ucis=d&amp;gut=v2&amp;ifi=13&amp;u_tz=330&amp;u_his=1&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Ftryit.asp%3Ffilename%3Dtryhow_js_topnav&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_js_topnav_responsive.asp&amp;dssz=26&amp;icsg=2931854721696&amp;std=0&amp;vis=1&amp;dmc=2&amp;scr_x=0&amp;scr_y=0&amp;psz=1366x-1&amp;msz=1366x-1&amp;ga_vid=1414308836.1537811604&amp;ga_sid=1541246231&amp;ga_hid=1566141569&amp;fws=4"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;pvsid=1542305400119667&amp;correlator=1760169558332944&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy6&amp;impl=fifs&amp;json_a=1&amp;eid=21061864%2C21062716&amp;vrg=271&amp;guci=2.2.0.0.2.2.0&amp;plat=1%3A67108864%2C2%3A67108864&amp;sc=1&amp;sfv=1-0-30&amp;iu_parts=22152718%2Csws-hb%2Cw3schools.com%2Ctry_it_leaderboard&amp;enc_prev_ius=%2F0%2F1%2F%2F2%2F%2F3&amp;prev_iu_szs=728x90&amp;rcs=5&amp;eri=1&amp;cust_params=content%3Dtryhowto&amp;cookie_enabled=1&amp;bc=7&amp;abxe=1&amp;lmt=1541239607&amp;dt=1541247042181&amp;dlt=1541246225110&amp;idt=4522&amp;frm=20&amp;biw=1366&amp;bih=657&amp;oid=3&amp;adxs=319&amp;adys=5&amp;adks=3132712143&amp;ucis=b&amp;gut=v2&amp;ifi=11&amp;u_tz=330&amp;u_his=1&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Ftryit.asp%3Ffilename%3Dtryhow_js_topnav&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_js_topnav_responsive.asp&amp;dssz=25&amp;icsg=732831466144&amp;std=0&amp;vis=1&amp;dmc=2&amp;scr_x=0&amp;scr_y=0&amp;psz=1366x-1&amp;msz=1366x-1&amp;ga_vid=1414308836.1537811604&amp;ga_sid=1541246231&amp;ga_hid=1566141569&amp;fws=4"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;pvsid=1542305400119667&amp;correlator=2375162852308732&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy5&amp;impl=fifs&amp;json_a=1&amp;eid=21061864%2C21062716&amp;vrg=271&amp;guci=2.2.0.0.2.2.0&amp;plat=1%3A67108864%2C2%3A67108864&amp;sc=1&amp;sfv=1-0-30&amp;iu_parts=22152718%2Csws-hb%2Cw3schools.com%2Ctry_it_leaderboard&amp;enc_prev_ius=%2F0%2F1%2F%2F2%2F%2F3&amp;prev_iu_szs=728x90&amp;rcs=4&amp;eri=1&amp;cust_params=content%3Dtryhowto&amp;cookie_enabled=1&amp;bc=7&amp;abxe=1&amp;lmt=1541239607&amp;dt=1541247031802&amp;dlt=1541246225110&amp;idt=4522&amp;frm=20&amp;biw=1366&amp;bih=657&amp;oid=3&amp;adxs=319&amp;adys=5&amp;adks=3132712143&amp;ucis=9&amp;gut=v2&amp;ifi=9&amp;u_tz=330&amp;u_his=1&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Ftryit.asp%3Ffilename%3Dtryhow_js_topnav&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_js_topnav_responsive.asp&amp;dssz=24&amp;icsg=183075652256&amp;std=0&amp;vis=1&amp;dmc=2&amp;scr_x=0&amp;scr_y=0&amp;psz=1366x-1&amp;msz=1366x-1&amp;ga_vid=1414308836.1537811604&amp;ga_sid=1541246231&amp;ga_hid=1566141569&amp;fws=4"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;pvsid=1542305400119667&amp;correlator=3432083836464048&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy4&amp;impl=fifs&amp;json_a=1&amp;eid=21061864%2C21062716&amp;vrg=271&amp;guci=2.2.0.0.2.2.0&amp;plat=1%3A67108864%2C2%3A67108864&amp;sc=1&amp;sfv=1-0-30&amp;iu_parts=22152718%2Csws-hb%2Cw3schools.com%2Ctry_it_leaderboard&amp;enc_prev_ius=%2F0%2F1%2F%2F2%2F%2F3&amp;prev_iu_szs=728x90&amp;rcs=3&amp;eri=1&amp;cust_params=content%3Dtryhowto&amp;cookie_enabled=1&amp;bc=7&amp;abxe=1&amp;lmt=1541239607&amp;dt=1541247029755&amp;dlt=1541246225110&amp;idt=4522&amp;frm=20&amp;biw=1366&amp;bih=657&amp;oid=3&amp;adxs=319&amp;adys=5&amp;adks=3132712143&amp;ucis=7&amp;gut=v2&amp;ifi=7&amp;u_tz=330&amp;u_his=1&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Ftryit.asp%3Ffilename%3Dtryhow_js_topnav&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_js_topnav_responsive.asp&amp;dssz=23&amp;icsg=45636698784&amp;std=0&amp;vis=1&amp;dmc=2&amp;scr_x=0&amp;scr_y=0&amp;psz=1366x-1&amp;msz=1366x-1&amp;ga_vid=1414308836.1537811604&amp;ga_sid=1541246231&amp;ga_hid=1566141569&amp;fws=4"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;pvsid=1542305400119667&amp;correlator=171116228425171&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy3&amp;impl=fifs&amp;json_a=1&amp;eid=21061864%2C21062716&amp;vrg=271&amp;guci=2.2.0.0.2.2.0&amp;plat=1%3A67108864%2C2%3A67108864&amp;sc=1&amp;sfv=1-0-30&amp;iu_parts=22152718%2Csws-hb%2Cw3schools.com%2Ctry_it_leaderboard&amp;enc_prev_ius=%2F0%2F1%2F%2F2%2F%2F3&amp;prev_iu_szs=728x90&amp;rcs=2&amp;eri=1&amp;cust_params=content%3Dtryhowto&amp;cookie_enabled=1&amp;bc=7&amp;abxe=1&amp;lmt=1541239607&amp;dt=1541247027713&amp;dlt=1541246225110&amp;idt=4522&amp;frm=20&amp;biw=1366&amp;bih=657&amp;oid=3&amp;adxs=319&amp;adys=5&amp;adks=3132712143&amp;ucis=5&amp;gut=v2&amp;ifi=5&amp;u_tz=330&amp;u_his=1&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Ftryit.asp%3Ffilename%3Dtryhow_js_topnav&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_js_topnav_responsive.asp&amp;dssz=22&amp;icsg=11276960416&amp;std=0&amp;vis=1&amp;dmc=2&amp;scr_x=0&amp;scr_y=0&amp;psz=1366x-1&amp;msz=1366x-1&amp;ga_vid=1414308836.1537811604&amp;ga_sid=1541246231&amp;ga_hid=1566141569&amp;fws=4"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;pvsid=1542305400119667&amp;correlator=3763656350380397&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy2&amp;impl=fifs&amp;json_a=1&amp;eid=21061864%2C21062716&amp;vrg=271&amp;guci=2.2.0.0.2.2.0&amp;plat=1%3A67108864%2C2%3A67108864&amp;sc=1&amp;sfv=1-0-30&amp;iu_parts=22152718%2Csws-hb%2Cw3schools.com%2Ctry_it_leaderboard&amp;enc_prev_ius=%2F0%2F1%2F%2F2%2F%2F3&amp;prev_iu_szs=728x90&amp;rcs=1&amp;eri=1&amp;cust_params=content%3Dtryhowto&amp;cookie_enabled=1&amp;bc=7&amp;abxe=1&amp;lmt=1541239607&amp;dt=1541247014733&amp;dlt=1541246225110&amp;idt=4522&amp;frm=20&amp;biw=1366&amp;bih=657&amp;oid=3&amp;adxs=319&amp;adys=5&amp;adks=3132712143&amp;ucis=3&amp;gut=v2&amp;ifi=3&amp;u_tz=330&amp;u_his=1&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;u_sd=1&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Ftryit.asp%3Ffilename%3Dtryhow_js_topnav&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_js_topnav_responsive.asp&amp;dssz=21&amp;icsg=2687025824&amp;std=0&amp;vis=1&amp;dmc=2&amp;scr_x=0&amp;scr_y=0&amp;psz=1366x-1&amp;msz=1366x-1&amp;ga_vid=1414308836.1537811604&amp;ga_sid=1541246231&amp;ga_hid=1566141569&amp;fws=4"></script><script src="./toggle nav_files/f(5).txt"></script><script src="./toggle nav_files/pubads_impl_rendering_271.js.download"></script><script src="./toggle nav_files/cb=gapi.loaded_0" async=""></script><script type="text/javascript" src="./toggle nav_files/prebid.js.download" async=""></script><script type="text/javascript" async="" src="./toggle nav_files/snhbGlobalSettings.js.download"></script><script async="" type="text/javascript" src="./toggle nav_files/gpt.js.download"></script><script async="" type="text/javascript" src="./toggle nav_files/gpt.js.download"></script><script async="" src="./toggle nav_files/analytics.js.download"></script><script src="./toggle nav_files/codemirror.js.download"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-3855518-1', 'auto');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+</script>
+
+<script async="async" type="text/javascript" src="./toggle nav_files/snhb-w3schools.min.js.download"></script>
+<script type="text/javascript">
+(function() {
+var gads = document.createElement('script');
+gads.async = true;
+gads.type = 'text/javascript';
+gads.src = 'https://www.googletagservices.com/tag/js/gpt.js';
+var node = document.getElementsByTagName('script')[0];
+node.parentNode.insertBefore(gads, node);
+})();
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+var snhb = snhb || {}; snhb.queue = snhb.queue || [];
+snhb.options = {
+               logOutputEnabled : false,
+               autoStartAuction: false,
+               gdpr: {
+                     mainGeo: "us",
+                     reconsiderationAppealIntervalSeconds: 0
+                     }
+               };
+               
+// GPT slots
+var gptAdSlots = [];
+googletag.cmd.push(function() {
+googletag.pubads().disableInitialLoad();               
+googletag.pubads().enableSingleRequest();
+  var leaderMapping = googletag.sizeMapping().
+  // Mobile ad
+  addSize([0, 0], [320, 50]). 
+  // Vertical Tablet ad
+  addSize([468, 0], [468, 60]). 
+  // Horizontal Tablet
+  addSize([728, 0], [728, 90]).
+  // Desktop and bigger ad
+  addSize([970, 0], [[728, 90], [970, 90]]).build();
+  // addSize([970, 0], [728, 90]).build();
+  gptAdSlots[0] = googletag.defineSlot('/16833175/TryitLeaderboard', [[728, 90], [970, 90]], 'div-gpt-ad-1428407818244-0').
+  // gptAdSlots[0] = googletag.defineSlot('/16833175/TryitLeaderboard', [728, 90], 'div-gpt-ad-1428407818244-0').
+  defineSizeMapping(leaderMapping).addService(googletag.pubads());
+  googletag.pubads().setTargeting("content","try" + (function () {
+    var folder = location.pathname;
+    folder = folder.replace("/", "");
+    folder = folder.substr(0, folder.indexOf("/"));
+    return folder;
+  })()
+  );
+  snhb.queue.push(function(){
+    
+    snhb.startAuction(["try_it_leaderboard"]);
+    
+  });
+googletag.enableServices();
+});
+</script>
+<script src="./toggle nav_files/cmp.stub.js.download" type="text/javascript"></script>
+<script>
+if (window.addEventListener) {              
+    window.addEventListener("resize", browserResize);
+} else if (window.attachEvent) {                 
+    window.attachEvent("onresize", browserResize);
+}
+var xbeforeResize = window.innerWidth;
+
+function browserResize() {
+    var afterResize = window.innerWidth;
+    if ((xbeforeResize < (970) && afterResize >= (970)) || (xbeforeResize >= (970) && afterResize < (970)) ||
+        (xbeforeResize < (728) && afterResize >= (728)) || (xbeforeResize >= (728) && afterResize < (728)) ||
+        (xbeforeResize < (468) && afterResize >= (468)) ||(xbeforeResize >= (468) && afterResize < (468))) {
+        xbeforeResize = afterResize;
+        
+        snhb.queue.push(function(){  snhb.startAuction(["try_it_leaderboard"]); });
+         
+    }
+    if (window.screen.availWidth <= 768) {
+      restack(window.innerHeight > window.innerWidth);
+    }
+    fixDragBtn();
+    showFrameSize();    
+}
+var fileID = "";
+var loadSave = false;
+function getSavedFile() {
+    loadSave = true;
+    var htmlCode;
+    var paramObj = {};
+    paramObj.fileid = "";
+    fileID = paramObj.fileid;
+    var paramA = JSON.stringify(paramObj);
+    var httpA = new XMLHttpRequest();
+    httpA.open("POST", globalURL, true);
+    httpA.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    httpA.onreadystatechange = function() {
+        if(httpA.readyState == 4 && httpA.status == 200) {
+            document.getElementById("textareaCode").value = httpA.responseText;
+            window.editor.getDoc().setValue(httpA.responseText);
+            loadSave = false;
+        }
+    }
+    httpA.send(paramA);   
+}
+
+</script>
+<style>
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  color:#000000;
+  margin:0px;
+  font-size:100%;
+}
+.trytopnav {
+  height:40px;
+  overflow:hidden;
+  min-width:380px;
+  position:absolute;
+  width:100%;
+  top:99px;
+}
+.w3-bar .w3-bar-item:hover {
+  color:#757575 !important;
+}
+a.w3schoolslink {
+  padding:0 !important;
+  display:inline !important;
+}
+a.w3schoolslink:hover,a.w3schoolslink:active {
+  text-decoration:underline !important;
+  background-color:transparent !important;
+}
+#dragbar{
+  position:absolute;
+  cursor: col-resize;
+  z-index:3;
+  padding:5px;
+}
+#shield {
+  display:none;
+  top:0;
+  left:0;
+  width:100%;
+  position:absolute;
+  height:100%;
+  z-index:4;
+}
+#framesize span {
+  font-family:Consolas, monospace;
+}
+#container {
+  background-color:#f1f1f1;
+  width:100%;
+  overflow:auto;
+  position:absolute;
+  top:138px;
+  bottom:0;
+  height:auto;
+}
+#textareacontainer, #iframecontainer {
+  float:left;
+  height:100%;
+  width:50%;
+}
+#textarea, #iframe {
+  height:100%;
+  width:100%;
+  padding-bottom:10px;
+  padding-top:1px;
+}
+#textarea {
+  padding-left:10px;
+  padding-right:5px;  
+}
+#iframe {
+  padding-left:5px;
+  padding-right:10px;  
+}
+#textareawrapper {
+  width:100%;
+  height:100%;
+  background-color: #ffffff;
+  position:relative;
+  box-shadow:0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+#iframewrapper {
+  width:100%;
+  height:100%;
+  -webkit-overflow-scrolling: touch;
+  background-color: #ffffff;
+  box-shadow:0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+#textareaCode {
+  background-color: #ffffff;
+  font-family: consolas,"courier new",monospace;
+  font-size:15px;
+  height:100%;
+  width:100%;
+  padding:8px;
+  resize: none;
+  border:none;
+  line-height:normal;    
+}
+.CodeMirror.cm-s-default {
+  line-height:normal;
+  padding: 4px;
+  height:100%;
+  width:100%;
+}
+#iframeResult, #iframeSource {
+  background-color: #ffffff;
+  height:100%;
+  width:100%;  
+}
+#stackV {background-color:#999999;}
+#stackV:hover {background-color:#BBBBBB !important;}
+#stackV.horizontal {background-color:transparent;}
+#stackV.horizontal:hover {background-color:#BBBBBB !important;}
+#stackH.horizontal {background-color:#999999;}
+#stackH.horizontal:hover {background-color:#999999 !important;}
+#textareacontainer.horizontal,#iframecontainer.horizontal{
+  height:50%;
+  float:none;
+  width:100%;
+}
+#textarea.horizontal{
+  height:100%;
+  padding-left:10px;
+  padding-right:10px;
+}
+#iframe.horizontal{
+  height:100%;
+  padding-right:10px;
+  padding-bottom:10px;
+  padding-left:10px;  
+}
+#container.horizontal{
+  min-height:200px;
+  margin-left:0;
+}
+#tryitLeaderboard {
+  overflow:hidden;
+  text-align:center;
+  margin-top:5px;
+  height:90px;
+}
+  .w3-dropdown-content {width:350px}
+  
+@media screen and (max-width: 727px) {
+  .trytopnav {top:70px;}
+  #container {top:108px;}
+
+}
+@media screen and (max-width: 467px) {
+  .trytopnav {top:60px;}
+  #container {top:98px;}
+  .w3-dropdown-content {width:100%}
+}
+@media only screen and (max-device-width: 768px) {
+  #iframewrapper {overflow: auto;}
+  #container     {min-width:320px;}
+  .stack         {display:none;}
+  #tryhome       {display:block;}
+}
+
+@font-face {
+font-family: 'fontawesome';
+src:url('../lib/fonts/fontawesome.eot?14663396');
+src:url('../lib/fonts/fontawesome.eot?14663396#iefix') format('embedded-opentype'),
+    url('../lib/fonts/fontawesome.woff?14663396') format('woff'),
+    url('../lib/fonts/fontawesome.ttf?14663396') format('truetype'),
+    url('../lib/fonts/fontawesome.svg?14663396#fontawesome') format('svg');
+font-weight:normal;
+font-style:normal;
+}
+.fa {
+  display:inline-block;
+  font:normal normal normal 14px/1 FontAwesome;
+  font-size:inherit;
+  text-rendering:auto;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  transform:translate(0,0);
+}
+.fa-2x {
+  font-size:2em;
+}
+.fa-home:before {content: '\e800'; }
+.fa-save:before {content: '\e804'; }
+.fa-rotate:before {content: '\e813'; }
+.fa-menu:before { content: '\f0c9'; }
+.loader {
+    border: 6px solid #f3f3f3; /* Light grey */
+    border-top: 6px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
+}
+#saveLoader {
+    margin:20px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+#iframewrapper {
+	
+}
+
+</style>
+<!--[if lt IE 8]>
+<style>
+#textareacontainer, #iframecontainer {width:48%;}
+#container {height:500px;}
+#textarea, #iframe {width:90%;height:450px;}
+#textareaCode, #iframeResult {height:450px;}
+.stack {display:none;}
+</style>
+<![endif]-->
+<link rel="preload" href="https://adservice.google.co.in/adsid/integrator.js?domain=www.w3schools.com" as="script"><script type="text/javascript" src="https://adservice.google.co.in/adsid/integrator.js?domain=www.w3schools.com"></script><link rel="preload" href="https://adservice.google.com/adsid/integrator.js?domain=www.w3schools.com" as="script"><script type="text/javascript" src="https://adservice.google.com/adsid/integrator.js?domain=www.w3schools.com"></script><script src="./toggle nav_files/pubads_impl_271.js.download" async=""></script><link rel="prefetch" href="https://tpc.googlesyndication.com/safeframe/1-0-30/html/container.html"></head>
+<body>
+
+<div id="tryitLeaderboard" style="background-color:#ffffff">
+<!-- TryitLeaderboard -->
+
+  <!--<pre>try_it_leaderboard, all: [320,50][728,90][468,60]</pre>-->
+  <div id="snhb-try_it_leaderboard-0" data-google-query-id="CL-PhNWVuN4CFRN5jwodW2gEAg"><div id="google_ads_iframe_/22152718/sws-hb//w3schools.com//try_it_leaderboard_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/22152718/sws-hb//w3schools.com//try_it_leaderboard_0" title="3rd party ad content" name="google_ads_iframe_/22152718/sws-hb//w3schools.com//try_it_leaderboard_0" width="728" height="90" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" style="border: 0px; vertical-align: bottom;" data-google-container-id="1" data-load-complete="true" src="./toggle nav_files/saved_resource(1).html"></iframe></div></div>
+ 
+</div>
+<script>globalURL = 'https://tryit.w3schools.com/code_datas.php';</script>
+<div id="saveModal" class="w3-modal" style="z-index:4">
+  <div class="w3-modal-content">
+    <div class="w3-display-container">
+      <span onclick="hideAndResetModal()" class="w3-button w3-display-topright" style="font-weight:bold;">×</span>
+      <div id="preSave" class="w3-panel">
+        <h2>Save Your Code</h2>
+        <p>If you click the save button, your code will be saved, and you get an URL you can share with others.</p>
+        <div style="height:34px">
+        <p>
+            <button class="w3-btn w3-green" style="margin-right:15px" title="Save" onclick="saveFile(document.getElementById(&#39;textareaCode&#39;).value);">Save</button>
+            <button class="w3-btn w3-red" title="Cancel" style="margin-right:15px" onclick="hideAndResetModal();">Cancel</button>
+        </p>
+        </div>
+        <p>By clicking the "Save" button you agree to our <a href="javascript:void(0);" class="w3-hover-text-green" onclick="document.getElementById(&#39;saveDisclaimer&#39;).style.display=&#39;block&#39;;">terms and conditions</a>.</p>
+        <p><a href="https://www.w3schools.com/default.asp" class="w3-button w3-light-grey" onclick="event.preventDefault();displayError()">Report Error</a></p>
+        <div id="saveDisclaimer" style="display:none;">
+          <p>All code in shared files are supplied by users, and belongs to the poster.</p>
+          <p>All shared files are made public. No license is enforced.</p>
+          <p>Any code can be removed without warning (if it is deemed offensive, damaging or for any other reason).</p>        
+          <p>w3schools.com are not responsible or liable for any loss or damage of any kind during the usage of provided code.</p>
+        </div>
+      </div>
+      <div id="errorSave" style="display:none" class="w3-panel">
+          <h2>Your Code Could Not be Saved</h2>
+          <p>The code has too many characters.</p>
+      </div>
+      <div id="postSave" class="w3-panel" style="display:none;">
+        <div id="saveLoader" class="loader"></div>
+        <div id="saveModalSaved" style="display:none">
+          <h2>Your Code has Been Saved</h2>
+          <p>File has been saved to: <a id="shareLink" class="w3-hover-text-green" href="javascript:void(0);" target="_blank"><span id="shareLinkText"></span></a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="driveSaveModal" class="w3-modal" style="z-index:4">
+  <div class="w3-modal-content">
+    <div class="w3-display-container">
+      <span onclick="resetDriveSaveModal()" class="w3-button w3-display-topright" style="font-weight:bold;">×</span>
+      <div id="driveText" class="w3-panel w3-large">
+        <h2>Save to Google Drive</h2>
+        <p>If you have a Google account, you can save this code to your Google Drive.</p>
+        <p>Google will ask you to confirm Google Drive access.</p>
+        <p><label class="w3-text-black"><b>Save file as:</b></label>
+        <input class="w3-input w3-border" type="text" id="googleFileName" value="tryhow_js_topnav">
+        <button class="w3-button w3-light-grey w3-hover-grey w3-hover-text-white w3-margin-top" title="Save file to Google Drive" onclick="handleAuthClick(event,&#39;save&#39;)"><img style="margin-right:5px" alt="Save file to Google Drive" title="Save file to Google Drive" src="./toggle nav_files/driveicon.png">Save file</button>
+      </p></div>
+      <div class="w3-panel w3-large loader" id="driveSavedPanel" style="display:none">
+      <p id="driveSavedText"></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="driveLoadModal" class="w3-modal" style="z-index:4">
+  <div class="w3-modal-content">
+    <div class="w3-display-container">
+      <span onclick="resetDriveLoadModal()" class="w3-button w3-display-topright" style="font-weight:bold;">×</span>
+      <div class="w3-panel w3-large">
+        <h2>Open from Google Drive</h2>
+        <p>If you have saved a file to Google Drive, you can open it here:</p>
+        <p><button class="w3-button w3-light-grey w3-hover-grey w3-hover-text-white" title="Open file from Google Drive" onclick="handleAuthClick(event,&#39;open&#39;)"><img style="margin-right:5px" alt="Open file from Google Drive" title="Open file from Google Drive" src="./toggle nav_files/driveicon.png">Open file</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="trytopnav">
+<div class="w3-bar w3-light-grey" style="border-top:1px solid #f1f1f1;overflow:auto">
+  <a id="tryhome" href="https://www.w3schools.com/" target="_blank" title="w3schools.com Home" class="w3-button w3-bar-item topnav-icons fa fa-home" style="font-size:28px;color:#999999;margin-top:-2px"></a>
+  <a href="javascript:void(0);" onclick="openMenu()" id="menuButton" title="Open Menu" class="w3-dropdown-click w3-button w3-bar-item topnav-icons fa fa-menu" style="font-size:28px;color:#999999;margin-top:-2px"></a>
+  <a href="javascript:void(0);" onclick="click_savebtn()" title="Save" class="w3-button w3-bar-item topnav-icons fa fa-save" style="font-size:28px;color:#999999;margin-top:-2px"></a>
+  <a href="javascript:void(0);" onclick="restack(currentStack)" title="Change Orientation" class="w3-button w3-bar-item topnav-icons fa fa-rotate" style="font-size:28px;color:#999999;margin-top:-2px"></a>
+  <button class="w3-button w3-bar-item w3-green w3-hover-white w3-hover-text-green" onclick="submitTryit(1);snhb.startAuction([&#39;try_it_leaderboard&#39;]);">Run »</button>
+  <span class="w3-right w3-hide-medium w3-hide-small" style="padding:8px 8px 8px 8px;display:block"></span>
+  <span class="w3-right w3-hide-small" style="padding:8px 0;display:block;float:right;"><span id="framesize">Result Size: <span>535 x 459</span></span></span>
+</div>
+
+</div>
+<div id="shield" style="display: none;"></div>
+
+<a href="javascript:void(0)" id="dragbar" style="width: 5px; top: 138px; left: 800.844px; height: 459px; cursor: col-resize;"></a>
+<div id="container">
+<div id="navbarDropMenu" class="w3-dropdown-content w3-bar-block w3-border" style="z-index:5">
+<span onclick="openMenu()" class="w3-button w3-display-topright w3-transparent w3-hover-dark-grey" title="Close Menu" style="font-weight:bold;padding-top:10px;padding-bottom:11px;">×</span>
+  <div class="w3-bar-block">
+    <a class="w3-bar-item w3-button" href="javascript:void(0);" title="Change Orientaton" onclick="openMenu();restack(currentStack)"><i class="fa fa-rotate" style="font-size:26px;margin-left:-4px;margin-right:8px"></i><span style="position:relative;top:-4px;left:2px;">Change Orientation</span></a>
+    <a class="w3-bar-item w3-button" href="javascript:void(0);" title="Save" onclick="openMenu();click_savebtn()"><i class="fa fa-save" style="font-size:26px;margin-right:10px;"></i><span style="position:relative;top:-4px;left:2px;">Save Code</span></a>
+    <a class="w3-bar-item w3-button" href="javascript:void(0);" id="saveGDriveBtn" title="Save to Google Drive" onclick="openMenu();click_google_savebtn()"><img src="./toggle nav_files/driveicon_32.png" alt="Save to Google Drive" title="Save to Google Drive" style="margin-right:10px;width:24px;"><span style="position:relative;left:1px;">Save to Google Drive</span></a>
+    <a class="w3-bar-item w3-button" href="javascript:void(0);" id="loadGDriveBtn" title="Load from Google Drive" onclick="openMenu();click_google_loadbtn()"><img src="./toggle nav_files/driveicon_32.png" alt="Load from Google Drive" title="Load from Google Drive" style="margin-right:10px;width:24px;"><span style="position:relative;left:1px;">Load from Google Drive</span></a>
+  </div>
+  <footer class="w3-container w3-small w3-light-gray">
+  <p><a style="display:inline;padding:0;" href="https://www.w3schools.com/about/about_privacy.asp" target="_blank" onclick="openMenu();" class="w3-hover-none w3-hover-text-green">Privacy policy</a> and 
+  <a style="display:inline;padding:0;" href="https://www.w3schools.com/about/about_copyright.asp" target="_blank" onclick="openMenu();" class="w3-hover-none w3-hover-text-green">Copyright 1999-2018</a></p>
+  </footer>
+</div>
+<div id="menuOverlay" class="w3-overlay w3-transparent" style="cursor:pointer;z-index:4"></div>
+  <div id="textareacontainer" style="width: 59.7365%;">
+    <div id="textarea">
+      <div id="textareawrapper">
+        <textarea autocomplete="off" id="textareaCode" wrap="logical" spellcheck="false" style="display: none;">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"&gt;
+&lt;style&gt;
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;div class="topnav" id="myTopnav"&gt;
+  &lt;a href="#home" class="active"&gt;Home&lt;/a&gt;
+  &lt;a href="#news"&gt;News&lt;/a&gt;
+  &lt;a href="#contact"&gt;Contact&lt;/a&gt;
+  &lt;a href="#about"&gt;About&lt;/a&gt;
+  &lt;a href="javascript:void(0);" class="icon" onclick="myFunction()"&gt;
+    &lt;i class="fa fa-bars"&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div style="padding-left:16px"&gt;
+  &lt;h2&gt;Responsive Topnav Example&lt;/h2&gt;
+  &lt;p&gt;Resize the browser window to see how it works.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</textarea><div class="CodeMirror cm-s-default CodeMirror-wrap CodeMirror-focused"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 449px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;" tabindex="0"></textarea></div><div class="CodeMirror-vscrollbar" cm-not-content="true" style="display: block; bottom: 0px;"><div style="min-width: 1px; height: 1744px;"></div></div><div class="CodeMirror-hscrollbar" cm-not-content="true"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1" draggable="false"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: -17px; border-right-width: 13px; min-height: 1736px; padding-right: 17px; padding-bottom: 0px;"><div style="position: relative; top: 486px;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre>x</pre></div><div class="CodeMirror-measure"><pre class="CodeMirror-line"><span style="padding-right: 0.1px;"><span cm-text="">&#8203;</span></span></pre></div><div style="position: relative; z-index: 1;"><div class="CodeMirror-selected" style="position: absolute; left: 4px; top: 0px; width: 768px;"></div><div class="CodeMirror-selected" style="position: absolute; left: 4px; top: 1224px; width: 0px; height: 18px;"></div><div class="CodeMirror-selected" style="position: absolute; left: 4px; top: 0px; width: 768px; height: 1224px;"></div></div><div class="CodeMirror-cursors" style=""></div><div class="CodeMirror-code" style=""><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-css cm-qualifier">.topnav</span><span class="cm-m-css"> </span><span class="cm-m-css cm-tag">a</span><span class="cm-m-css">:</span><span class="cm-m-css cm-variable-3">hover</span><span class="cm-m-css"> {</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-css"> &nbsp;</span><span class="cm-m-css cm-property">background-color</span><span class="cm-m-css">: </span><span class="cm-m-css cm-atom">#ddd</span><span class="cm-m-css">;</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-css"> &nbsp;</span><span class="cm-m-css cm-property">color</span><span class="cm-m-css">: </span><span class="cm-m-css cm-keyword">black</span><span class="cm-m-css">;</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-css">}</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">&#8203;</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-css cm-qualifier">.active</span><span class="cm-m-css"> {</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-css"> &nbsp;</span><span class="cm-m-css cm-property">background-color</span><span class="cm-m-css">: </span><span class="cm-m-css cm-atom">#4CAF50</span><span class="cm-m-css">;</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-css"> &nbsp;</span><span class="cm-m-css cm-property">color</span><span class="cm-m-css">: </span><span class="cm-m-css cm-keyword">white</span><span class="cm-m-css">;</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-css">}</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">&#8203;</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-css cm-qualifier">.topnav</span><span class="cm-m-css"> </span><span class="cm-m-css cm-qualifier">.icon</span><span class="cm-m-css"> {</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-css"> &nbsp;</span><span class="cm-m-css cm-property">display</span><span class="cm-m-css">: </span><span class="cm-m-css cm-atom">none</span><span class="cm-m-css">;</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-css">}</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">&#8203;</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-css cm-def">@media</span><span class="cm-m-css"> </span><span class="cm-m-css cm-attribute">screen</span><span class="cm-m-css"> </span><span class="cm-m-css cm-keyword">and</span><span class="cm-m-css"> (</span><span class="cm-m-css cm-property">max-width</span><span class="cm-m-css">: </span><span class="cm-m-css cm-number">600px</span><span class="cm-m-css">) {</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-css"> &nbsp;</span><span class="cm-m-css cm-qualifier">.topnav</span><span class="cm-m-css"> </span><span class="cm-m-css cm-tag">a</span><span class="cm-m-css">:</span><span class="cm-m-css cm-variable-3">not</span><span class="cm-m-css">(:</span><span class="cm-m-css cm-variable-3">first-child</span><span class="cm-m-css">) {</span><span class="cm-m-css cm-property">display</span><span class="cm-m-css">: </span><span class="cm-m-css cm-atom">none</span><span class="cm-m-css">;}</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-css"> &nbsp;</span><span class="cm-m-css cm-qualifier">.topnav</span><span class="cm-m-css"> </span><span class="cm-m-css cm-tag">a</span><span class="cm-m-css cm-qualifier">.icon</span><span class="cm-m-css"> { &nbsp; </span><span class="cm-m-css cm-comment">/* icon is not visible if .icon placed after giving some space */</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-css"> &nbsp; &nbsp;</span><span class="cm-m-css cm-property">float</span><span class="cm-m-css">: </span><span class="cm-m-css cm-atom">right</span><span class="cm-m-css">;</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-css"> &nbsp; &nbsp;</span><span class="cm-m-css cm-property">display</span><span class="cm-m-css">: </span><span class="cm-m-css cm-atom">block</span><span class="cm-m-css">;</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-css">  }</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-css">}</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">&#8203;</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-css cm-def">@media</span><span class="cm-m-css"> </span><span class="cm-m-css cm-attribute">screen</span><span class="cm-m-css"> </span><span class="cm-m-css cm-keyword">and</span><span class="cm-m-css"> (</span><span class="cm-m-css cm-property">max-width</span><span class="cm-m-css">: </span><span class="cm-m-css cm-number">600px</span><span class="cm-m-css">) {</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-css"> &nbsp;</span><span class="cm-m-css cm-qualifier">.topnav.responsive</span><span class="cm-m-css"> {</span><span class="cm-m-css cm-property">position</span><span class="cm-m-css">: </span><span class="cm-m-css cm-atom">relative</span><span class="cm-m-css">;}</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-css"> &nbsp;</span><span class="cm-m-css cm-qualifier">.topnav.responsive</span><span class="cm-m-css"> </span><span class="cm-m-css cm-qualifier">.icon</span><span class="cm-m-css"> {</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-css"> &nbsp; &nbsp;</span><span class="cm-m-css cm-property">position</span><span class="cm-m-css">: </span><span class="cm-m-css cm-atom">absolute</span><span class="cm-m-css">; &nbsp; &nbsp;</span><span class="cm-m-css cm-comment">/* if we remove absolute or right, top then icon visible below &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  with sub link on a click &nbsp;  */</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-css"> &nbsp; &nbsp;</span><span class="cm-m-css cm-property">right</span><span class="cm-m-css">: </span><span class="cm-m-css cm-number">0</span><span class="cm-m-css">;</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-css"> &nbsp; &nbsp;</span><span class="cm-m-css cm-property">top</span><span class="cm-m-css">: </span><span class="cm-m-css cm-number">0</span><span class="cm-m-css">;</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-css">  }</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-css"> &nbsp;</span><span class="cm-m-css cm-qualifier">.topnav.responsive</span><span class="cm-m-css"> </span><span class="cm-m-css cm-tag">a</span><span class="cm-m-css"> {</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-css"> &nbsp; &nbsp;</span><span class="cm-m-css cm-property">float</span><span class="cm-m-css">: </span><span class="cm-m-css cm-atom">none</span><span class="cm-m-css">;</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-css"> &nbsp; &nbsp;</span><span class="cm-m-css cm-property">display</span><span class="cm-m-css">: </span><span class="cm-m-css cm-atom">block</span><span class="cm-m-css">;</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-css"> &nbsp; &nbsp;</span><span class="cm-m-css cm-property">text-align</span><span class="cm-m-css">: </span><span class="cm-m-css cm-atom">left</span><span class="cm-m-css">;</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-css">  }</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-css">}</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-xml cm-tag cm-bracket">&lt;/</span><span class="cm-m-xml cm-tag">style</span><span class="cm-m-xml cm-tag cm-bracket">&gt;</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-xml cm-tag cm-bracket">&lt;/</span><span class="cm-m-xml cm-tag">head</span><span class="cm-m-xml cm-tag cm-bracket">&gt;</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-xml cm-tag cm-bracket">&lt;</span><span class="cm-m-xml cm-tag">body</span><span class="cm-m-xml cm-tag cm-bracket">&gt;</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">&#8203;</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-xml cm-tag cm-bracket">&lt;</span><span class="cm-m-xml cm-tag">div</span><span class="cm-m-xml"> </span><span class="cm-m-xml cm-attribute">class</span><span class="cm-m-xml">=</span><span class="cm-m-xml cm-string">"topnav"</span><span class="cm-m-xml"> </span><span class="cm-m-xml cm-attribute">id</span><span class="cm-m-xml">=</span><span class="cm-m-xml cm-string">"myTopnav"</span><span class="cm-m-xml cm-tag cm-bracket">&gt;</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-xml"> &nbsp;</span><span class="cm-m-xml cm-tag cm-bracket">&lt;</span><span class="cm-m-xml cm-tag">a</span><span class="cm-m-xml"> </span><span class="cm-m-xml cm-attribute">href</span><span class="cm-m-xml">=</span><span class="cm-m-xml cm-string">"#home"</span><span class="cm-m-xml"> </span><span class="cm-m-xml cm-attribute">class</span><span class="cm-m-xml">=</span><span class="cm-m-xml cm-string">"active"</span><span class="cm-m-xml cm-tag cm-bracket">&gt;</span><span class="cm-m-xml">Home</span><span class="cm-m-xml cm-tag cm-bracket">&lt;/</span><span class="cm-m-xml cm-tag">a</span><span class="cm-m-xml cm-tag cm-bracket">&gt;</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-xml"> &nbsp;</span><span class="cm-m-xml cm-tag cm-bracket">&lt;</span><span class="cm-m-xml cm-tag">a</span><span class="cm-m-xml"> </span><span class="cm-m-xml cm-attribute">href</span><span class="cm-m-xml">=</span><span class="cm-m-xml cm-string">"#news"</span><span class="cm-m-xml cm-tag cm-bracket">&gt;</span><span class="cm-m-xml">News</span><span class="cm-m-xml cm-tag cm-bracket">&lt;/</span><span class="cm-m-xml cm-tag">a</span><span class="cm-m-xml cm-tag cm-bracket">&gt;</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-xml"> &nbsp;</span><span class="cm-m-xml cm-tag cm-bracket">&lt;</span><span class="cm-m-xml cm-tag">a</span><span class="cm-m-xml"> </span><span class="cm-m-xml cm-attribute">href</span><span class="cm-m-xml">=</span><span class="cm-m-xml cm-string">"#contact"</span><span class="cm-m-xml cm-tag cm-bracket">&gt;</span><span class="cm-m-xml">Contact</span><span class="cm-m-xml cm-tag cm-bracket">&lt;/</span><span class="cm-m-xml cm-tag">a</span><span class="cm-m-xml cm-tag cm-bracket">&gt;</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-xml"> &nbsp;</span><span class="cm-m-xml cm-tag cm-bracket">&lt;</span><span class="cm-m-xml cm-tag">a</span><span class="cm-m-xml"> </span><span class="cm-m-xml cm-attribute">href</span><span class="cm-m-xml">=</span><span class="cm-m-xml cm-string">"#about"</span><span class="cm-m-xml cm-tag cm-bracket">&gt;</span><span class="cm-m-xml">About</span><span class="cm-m-xml cm-tag cm-bracket">&lt;/</span><span class="cm-m-xml cm-tag">a</span><span class="cm-m-xml cm-tag cm-bracket">&gt;</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-xml"> &nbsp;</span><span class="cm-m-xml cm-tag cm-bracket">&lt;</span><span class="cm-m-xml cm-tag">a</span><span class="cm-m-xml"> </span><span class="cm-m-xml cm-attribute">href</span><span class="cm-m-xml">=</span><span class="cm-m-xml cm-string">"javascript:void(0);"</span><span class="cm-m-xml"> </span><span class="cm-m-xml cm-attribute">class</span><span class="cm-m-xml">=</span><span class="cm-m-xml cm-string">"icon"</span><span class="cm-m-xml"> </span><span class="cm-m-xml cm-attribute">onclick</span><span class="cm-m-xml">=</span><span class="cm-m-xml cm-string">"myFunction()"</span><span class="cm-m-xml cm-tag cm-bracket">&gt;</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-xml"> &nbsp; &nbsp;</span><span class="cm-m-xml cm-tag cm-bracket">&lt;</span><span class="cm-m-xml cm-tag">i</span><span class="cm-m-xml"> </span><span class="cm-m-xml cm-attribute">class</span><span class="cm-m-xml">=</span><span class="cm-m-xml cm-string">"fa fa-bars"</span><span class="cm-m-xml cm-tag cm-bracket">&gt;&lt;/</span><span class="cm-m-xml cm-tag">i</span><span class="cm-m-xml cm-tag cm-bracket">&gt;</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-xml"> &nbsp;</span><span class="cm-m-xml cm-tag cm-bracket">&lt;/</span><span class="cm-m-xml cm-tag">a</span><span class="cm-m-xml cm-tag cm-bracket">&gt;</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 13px; width: 1px; border-bottom: 0px solid transparent; top: 1736px;"></div><div class="CodeMirror-gutters" style="display: none; height: 1749px;"></div></div></div>
+        <form id="codeForm" autocomplete="off" style="margin:0px;display:none;">
+          <input type="hidden" name="code" id="code">
+        </form>
+       </div>
+    </div>
+  </div>
+  <div id="iframecontainer" style="width: 40.2635%;">
+    <div id="iframe">
+      <div id="iframewrapper"><iframe frameborder="0" id="iframeResult" name="iframeResult" src="./toggle nav_files/saved_resource(2).html"></iframe></div>
+    </div>
+  </div>
+</div>
+<div id="err_form" class="w3-modal" style="z-index:4">
+  <div class="w3-modal-content w3-display-container">
+      <span onclick="document.getElementById(&#39;err_form&#39;).style.display=&#39;none&#39;" class="w3-button w3-display-topright w3-text-white w3-padding w3-green" style="font-weight:bold;">×</span>
+      <div class="w3-container w3-green">
+        <h2>Report a Problem:</h2>
+      </div>
+<form class="w3-container"> 
+<p><label for="err_email">Your E-mail:</label>
+<input class="w3-input w3-border" type="text" style="width:100%" id="err_email" name="err_email">   
+</p>
+<p>
+<label for="err_email">Page address:</label>
+<input class="w3-input w3-border" type="text" style="width:100%" id="err_url" name="err_url" disabled="disabled">
+</p>
+<p>
+<label for="err_email">Description:</label>
+<textarea rows="10" class="w3-input w3-border" id="err_desc" name="err_desc" style="width:100%;resize:vertical"></textarea>   
+</p>
+<button class="w3-btn w3-right w3-green w3-margin-bottom" type="button" onclick="sendErr()">Submit</button>
+</form>
+
+  </div>
+</div>
+<script>
+submitTryit()
+
+function submitTryit(n) {
+  if (window.editor) {
+    window.editor.save();
+  }
+  var text = document.getElementById("textareaCode").value;
+  var ifr = document.createElement("iframe");
+  ifr.setAttribute("frameborder", "0");
+  ifr.setAttribute("id", "iframeResult");
+  ifr.setAttribute("name", "iframeResult");  
+  document.getElementById("iframewrapper").innerHTML = "";
+  document.getElementById("iframewrapper").appendChild(ifr);
+  if (loadSave == true ) {
+    ifr.setAttribute("src", "/code/opentext.htm");
+  } else if (fileID != "" && loadSave == false) {
+    var t=text;
+    t=t.replace(/=/gi,"w3equalsign");
+    t=t.replace(/\+/gi,"w3plussign");    
+    var pos=t.search(/script/i)
+    while (pos>0) {
+      t=t.substring(0,pos) + "w3" + t.substr(pos,3) + "w3" + t.substr(pos+3,3) + "tag" + t.substr(pos+6);
+	    pos=t.search(/script/i);
+    }
+    document.getElementById("code").value=t;
+    document.getElementById("codeForm").action = "https://tryit.w3schools.com/tryit_view.php?x=" + Math.random();
+    document.getElementById('codeForm').method = "post";
+    document.getElementById('codeForm').acceptCharset = "utf-8";
+    document.getElementById('codeForm').target = "iframeResult";
+    document.getElementById("codeForm").submit();
+  } else {
+    var ifrw = (ifr.contentWindow) ? ifr.contentWindow : (ifr.contentDocument.document) ? ifr.contentDocument.document : ifr.contentDocument;
+    ifrw.document.open();
+    ifrw.document.write(text);  
+    ifrw.document.close();
+    //23.02.2016: contentEditable is set to true, to fix text-selection (bug) in firefox.
+    //(and back to false to prevent the content from being editable)
+    //(To reproduce the error: Select text in the result window with, and without, the contentEditable statements below.)  
+    if (ifrw.document.body && !ifrw.document.body.isContentEditable) {
+      ifrw.document.body.contentEditable = true;
+      ifrw.document.body.contentEditable = false;
+    }
+  }
+}
+var currentStack=true;
+if ((window.screen.availWidth <= 768 && window.innerHeight > window.innerWidth) || "" == " horizontal") {restack(true);}
+function restack(horizontal) {
+    var tc, ic, t, i, c, f, sv, sh, d, height, flt, width;
+    tc = document.getElementById("textareacontainer");
+    ic = document.getElementById("iframecontainer");
+    t = document.getElementById("textarea");
+    i = document.getElementById("iframe");
+    c = document.getElementById("container");    
+    sv = document.getElementById("stackV");
+    sh = document.getElementById("stackH");
+    tc.className = tc.className.replace("horizontal", "");
+    ic.className = ic.className.replace("horizontal", "");        
+    t.className = t.className.replace("horizontal", "");        
+    i.className = i.className.replace("horizontal", "");        
+    c.className = c.className.replace("horizontal", "");                        
+    if (sv) {sv.className = sv.className.replace("horizontal", "")};
+    if (sv) {sh.className = sh.className.replace("horizontal", "")};
+    stack = "";
+    if (horizontal) {
+        tc.className = tc.className + " horizontal";
+        ic.className = ic.className + " horizontal";        
+        t.className = t.className + " horizontal";        
+        i.className = i.className + " horizontal";                
+        c.className = c.className + " horizontal";                
+        if (sv) {sv.className = sv.className + " horizontal"};
+        if (sv) {sh.className = sh.className + " horizontal"};
+        stack = " horizontal";
+        document.getElementById("textareacontainer").style.height = "50%";
+        document.getElementById("iframecontainer").style.height = "50%";
+        document.getElementById("textareacontainer").style.width = "100%";
+        document.getElementById("iframecontainer").style.width = "100%";
+        currentStack=false;
+    } else {
+        document.getElementById("textareacontainer").style.height = "100%";
+        document.getElementById("iframecontainer").style.height = "100%";
+        document.getElementById("textareacontainer").style.width = "50%";
+        document.getElementById("iframecontainer").style.width = "50%";
+        currentStack=true;        
+    }
+    fixDragBtn();
+    showFrameSize();
+}
+function showFrameSize() {
+  var t;
+  var width, height;
+  width = Number(w3_getStyleValue(document.getElementById("iframeResult"), "width").replace("px", "")).toFixed();
+  height = Number(w3_getStyleValue(document.getElementById("iframeResult"), "height").replace("px", "")).toFixed();
+  document.getElementById("framesize").innerHTML = "Result Size: <span>" + width + " x " + height + "</span>";
+}
+var dragging = false;
+var stack;
+function fixDragBtn() {
+  var textareawidth, leftpadding, dragleft, containertop, buttonwidth
+  var containertop = Number(w3_getStyleValue(document.getElementById("container"), "top").replace("px", ""));
+  if (stack != " horizontal") {
+    document.getElementById("dragbar").style.width = "5px";    
+    textareasize = Number(w3_getStyleValue(document.getElementById("textareawrapper"), "width").replace("px", ""));
+    leftpadding = Number(w3_getStyleValue(document.getElementById("textarea"), "padding-left").replace("px", ""));
+    buttonwidth = Number(w3_getStyleValue(document.getElementById("dragbar"), "width").replace("px", ""));
+    textareaheight = w3_getStyleValue(document.getElementById("textareawrapper"), "height");
+    dragleft = textareasize + leftpadding + (leftpadding / 2) - (buttonwidth / 2);
+    document.getElementById("dragbar").style.top = containertop + "px";
+    document.getElementById("dragbar").style.left = dragleft + "px";
+    document.getElementById("dragbar").style.height = textareaheight;
+    document.getElementById("dragbar").style.cursor = "col-resize";
+    
+  } else {
+    document.getElementById("dragbar").style.height = "5px";
+    if (window.getComputedStyle) {
+        textareawidth = window.getComputedStyle(document.getElementById("textareawrapper"),null).getPropertyValue("height");
+        textareaheight = window.getComputedStyle(document.getElementById("textareawrapper"),null).getPropertyValue("width");
+        leftpadding = window.getComputedStyle(document.getElementById("textarea"),null).getPropertyValue("padding-top");
+        buttonwidth = window.getComputedStyle(document.getElementById("dragbar"),null).getPropertyValue("height");
+    } else {
+        dragleft = document.getElementById("textareawrapper").currentStyle["width"];
+    }
+    textareawidth = Number(textareawidth.replace("px", ""));
+    leftpadding = Number(leftpadding .replace("px", ""));
+    buttonwidth = Number(buttonwidth .replace("px", ""));
+    dragleft = containertop + textareawidth + leftpadding + (leftpadding / 2);
+    document.getElementById("dragbar").style.top = dragleft + "px";
+    document.getElementById("dragbar").style.left = "5px";
+    document.getElementById("dragbar").style.width = textareaheight;
+    document.getElementById("dragbar").style.cursor = "row-resize";        
+  }
+}
+function dragstart(e) {
+  e.preventDefault();
+  dragging = true;
+  var main = document.getElementById("iframecontainer");
+}
+function dragmove(e) {
+  if (dragging) 
+  {
+    document.getElementById("shield").style.display = "block";        
+    if (stack != " horizontal") {
+      var percentage = (e.pageX / window.innerWidth) * 100;
+      if (percentage > 5 && percentage < 98) {
+        var mainPercentage = 100-percentage;
+        document.getElementById("textareacontainer").style.width = percentage + "%";
+        document.getElementById("iframecontainer").style.width = mainPercentage + "%";
+        fixDragBtn();
+      }
+    } else {
+      var containertop = Number(w3_getStyleValue(document.getElementById("container"), "top").replace("px", ""));
+      var percentage = ((e.pageY - containertop + 20) / (window.innerHeight - containertop + 20)) * 100;
+      if (percentage > 5 && percentage < 98) {
+        var mainPercentage = 100-percentage;
+        document.getElementById("textareacontainer").style.height = percentage + "%";
+        document.getElementById("iframecontainer").style.height = mainPercentage + "%";
+        fixDragBtn();
+      }
+    }
+    showFrameSize();    
+  }
+}
+function dragend() {
+  document.getElementById("shield").style.display = "none";
+  dragging = false;
+  if (window.editor) {
+    window.editor.refresh();
+  }
+}
+if (window.addEventListener) {              
+  document.getElementById("dragbar").addEventListener("mousedown", function(e) {dragstart(e);});
+  document.getElementById("dragbar").addEventListener("touchstart", function(e) {dragstart(e);});
+  window.addEventListener("mousemove", function(e) {dragmove(e);});
+  window.addEventListener("touchmove", function(e) {dragmove(e);});
+  window.addEventListener("mouseup", dragend);
+  window.addEventListener("touchend", dragend);
+  window.addEventListener("load", fixDragBtn);
+  window.addEventListener("load", showFrameSize);
+}
+function click_savebtn() {
+  if (window.editor) {
+    window.editor.save();
+  }
+  document.getElementById('saveModal').style.display = 'block';
+}
+function click_google_savebtn() {
+  if (window.editor) {
+    window.editor.save();
+  }
+  document.getElementById('driveSaveModal').style.display='block'
+}
+
+function click_google_loadbtn() {
+  document.getElementById('driveLoadModal').style.display='block'
+}
+
+
+function colorcoding() {
+  var ua = navigator.userAgent;
+  //Opera Mini refreshes the page when trying to edit the textarea.
+  if (ua && ua.toUpperCase().indexOf("OPERA MINI") > -1) { return false; }
+  window.editor = CodeMirror.fromTextArea(document.getElementById("textareaCode"), {
+    mode: "text/html",
+    htmlMode: true,
+    lineWrapping: true,
+    smartIndent: false,
+    addModeClass: true
+  });
+//  window.editor.on("change", function () {window.editor.save();});
+}
+colorcoding();
+
+function w3_getStyleValue(elmnt,style) {
+    if (window.getComputedStyle) {
+        return window.getComputedStyle(elmnt,null).getPropertyValue(style);
+    } else {
+        return elmnt.currentStyle[style];
+    }
+}
+//SAVE AND OPEN SCRIPT
+var oauthToken;
+var userAction;
+var pickerApiLoaded;
+var developerKey = 'AIzaSyAMZDPXiGcCNWs1UCWG9LS6kkW5YiABfJ0';
+var CLIENT_ID = '451843133508-ckbr5r6ch1ofqbmh87oll4u6ltinqv2t.apps.googleusercontent.com';
+var SCOPES = ['https://www.googleapis.com/auth/drive.file'];
+
+//Check if current user has authorized this application
+function checkAuth() {
+    gapi.auth.authorize(
+    {
+        'client_id': CLIENT_ID,
+        'scope': SCOPES.join(' '),
+        'immediate': true
+    }, handleAuthResult);
+}
+
+//Handle response from authorization server
+function handleAuthResult(authResult) {
+    if (authResult && !authResult.error) {
+        oauthToken = authResult.access_token;
+        loadApi();
+    }
+}
+
+// Initiate auth flow in response to user clicking authorize button
+function handleAuthClick(event,userClick) {
+    userAction = userClick;
+    gapi.auth.authorize(
+        {client_id: CLIENT_ID, scope: SCOPES, immediate: false},
+        handleAuthResult);
+    return false;
+}
+
+// Load API library
+function loadApi() {
+    gapi.client.load('drive', 'v3');
+    gapi.load('picker', {'callback': onPickerApiLoad});
+}
+function onPickerApiLoad() {
+    pickerApiLoaded = true;
+    if (userAction=="save") {
+        userAction="";
+        document.getElementById('driveText').style.display='none';
+        document.getElementById('driveSavedPanel').style.display='block';
+        createFileWithHTMLContent(document.getElementById('googleFileName').value,document.getElementById('textareaCode').value)     
+    }
+    if (userAction=="open") {
+        userAction="";
+        createPicker();
+    }
+}
+
+// Create and render a Picker object for picking HTML file
+function createPicker() {
+    if (pickerApiLoaded) {
+        var view = new google.picker.View(google.picker.ViewId.DOCS);
+        view.setMimeTypes("text/html");
+        var picker = new google.picker.PickerBuilder().
+            addView(view).
+            setOAuthToken(oauthToken).
+            setDeveloperKey(developerKey).
+            setCallback(pickerCallback).
+            build();
+        picker.setVisible(true);
+    }
+}
+// Put content of file in tryit editor
+function pickerCallback(data) {
+    var docID = '';
+    if (data[google.picker.Response.ACTION] == google.picker.Action.PICKED) {
+        var doc = data[google.picker.Response.DOCUMENTS][0];
+        docID = doc[google.picker.Document.ID];
+        getContentOfFile(docID);
+    }
+}
+
+//Get contents
+function getContentOfFile(theID){
+    gapi.client.request({'path': '/drive/v2/files/'+theID,'method': 'GET',callback: function ( theResponseJS, theResponseTXT ) {
+        var myToken = gapi.auth.getToken();
+        var myXHR   = new XMLHttpRequest();
+        myXHR.open('GET', theResponseJS.downloadUrl, true );
+        myXHR.setRequestHeader('Authorization', 'Bearer ' + myToken.access_token );
+        myXHR.onreadystatechange = function( theProgressEvent ) {
+            if (myXHR.readyState == 4) {
+                if ( myXHR.status == 200 ) {
+                    var code = myXHR.response;
+                    document.getElementById("textareaCode").value=code;
+                    window.editor.getDoc().setValue(code);
+                    submitTryit(1);
+                    resetDriveLoadModal();
+                }
+            }
+        }
+        myXHR.send();
+        }
+    });
+}
+
+var createFileWithHTMLContent = function(name,data,callback) {
+    const boundary = '-------314159265358979323846';
+    const delimiter = "\r\n--" + boundary + "\r\n";
+    const close_delim = "\r\n--" + boundary + "--";
+    const contentType = 'text/html';
+
+    var metadata = {
+        'name': name,
+        'mimeType': contentType
+    };
+
+    var multipartRequestBody =
+        delimiter +
+        'Content-Type: application/json\r\n\r\n' +
+        JSON.stringify(metadata) +
+        delimiter +
+        'Content-Type: ' + contentType + '\r\n\r\n' +
+        data +
+        close_delim;
+
+    var request = gapi.client.request({
+        'path': '/upload/drive/v3/files',
+        'method': 'POST',
+        'params': {'uploadType': 'multipart'},
+        'headers': {
+            'Content-Type': 'multipart/related; boundary="' + boundary + '"'
+        },
+        'body': multipartRequestBody});
+    if (!callback) {
+        callback = function(file) {
+            console.log(file);
+            document.getElementById("driveSavedText").innerHTML = file.name + " saved in Google Drive";
+            document.getElementById("driveSavedPanel").className = "w3-panel w3-large";
+        };
+    }
+    request.execute(callback);
+}
+
+if (navigator.userAgent.indexOf("MSIE") > 0 || navigator.userAgent.indexOf("Edge") > 0) {
+    document.getElementById("saveGDriveBtn").style.display = "none";
+    document.getElementById("loadGDriveBtn").style.display = "none";
+}
+
+
+function resetDriveSaveModal() {
+    document.getElementById('driveSavedText').innerHTML='';
+    document.getElementById('driveSaveModal').style.display='none'
+    document.getElementById('driveSavedPanel').style.display='none'
+    document.getElementById('driveText').style.display='block'
+    document.getElementById("driveSavedPanel").className = "w3-panel w3-large loader";
+}
+function resetDriveLoadModal() {
+    document.getElementById('driveLoadModal').style.display='none'
+}
+
+function saveFile(code) {
+    document.getElementById('preSave').style.display='none';
+    if (code.length>20000) {
+        document.getElementById('errorSave').style.display='block';    
+        return;
+    }
+    document.getElementById('postSave').style.display='block';    
+    var paramObj = {};
+    paramObj.code = code;
+    var paramB = JSON.stringify(paramObj);
+    var httpB = new XMLHttpRequest();
+    httpB.open("POST", globalURL, true);
+
+    httpB.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+
+    httpB.onreadystatechange = function() {
+    if(httpB.readyState == 4 && httpB.status == 200) {
+        if(httpB.responseText.substr(0,2) == "OK" ) {
+          var getId = httpB.responseText.substr(2);
+          document.getElementById("shareLink").href = "/code/tryit.asp?filename=" + getId;
+          document.getElementById("shareLinkText").innerHTML = "https://www.w3schools.com/code/tryit.asp?filename=" + getId;
+          document.getElementById('saveLoader').style.display = "none";
+          document.getElementById("saveModalSaved").style.display  = "block";
+        }
+    }
+    }
+    httpB.send(paramB);
+}
+function hideAndResetModal() {
+    document.getElementById("saveModal").style.display = "none";
+    document.getElementById('preSave').style.display = "block";
+    document.getElementById('errorSave').style.display = "none";    
+    document.getElementById('postSave').style.display = "none";
+    document.getElementById("saveModalSaved").style.display = "none";
+    document.getElementById('saveDisclaimer').style.display= "none";
+    document.getElementById('saveLoader').style.display = "block";
+}
+
+var addr = document.location.href;
+function displayError() {
+  document.getElementById("err_url").value = addr;
+  document.getElementById("err_form").style.display = "block";
+  document.getElementById("err_email").focus();
+  hideSent();
+}
+function hideError() {
+  document.getElementById("err_form").style.display = "none";
+}
+function hideSent() {
+  document.getElementById("err_sent").style.display = "none";
+}
+function sendErr() {
+  var xmlhttp;
+  var err_url = document.getElementById("err_url").value;
+  var err_email = document.getElementById("err_email").value;
+  var err_desc = document.getElementById("err_desc").value;
+  if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+    xmlhttp = new XMLHttpRequest();
+  } else {// code for IE6, IE5
+    xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  xmlhttp.open("POST", "/err_sup.asp", true);
+  xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+  xmlhttp.send("err_url=" + err_url + "&err_email=" + err_email + "&err_desc=" + escape(err_desc));
+  document.getElementById("err_desc").value = "";
+  hideError();
+  document.getElementById("err_sent").style.display = "block";
+}
+function openMenu() {
+    var x = document.getElementById("navbarDropMenu");
+    var y = document.getElementById("menuOverlay");
+    var z = document.getElementById("menuButton");
+    if (z.className.indexOf("w3-text-gray") == -1) {
+        z.className += " w3-text-gray";
+    } else { 
+        z.className = z.className.replace(" w3-text-gray", "");
+    }
+    if (z.className.indexOf("w3-gray") == -1) {
+        z.className += " w3-gray";
+    } else { 
+        z.className = z.className.replace(" w3-gray", "");
+    }
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+    if (y.className.indexOf("w3-show") == -1) {
+        y.className += " w3-show";
+    } else { 
+        y.className = y.className.replace(" w3-show", "");
+    }
+
+}
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == document.getElementById("saveModal")) {
+        hideAndResetModal();
+    }
+    if (event.target == document.getElementById("driveSaveModal")) {
+        resetDriveSaveModal();
+    }
+    if (event.target == document.getElementById("driveLoadModal")) {
+        resetDriveLoadModal();
+    }
+    if (event.target == document.getElementById("menuOverlay")) {
+        openMenu();
+    }
+    
+}
+
+</script>
+
+<script src="./toggle nav_files/client.js.download" gapi_processed="true"></script><iframe name="__cmpLocator" style="display: none;" src="./toggle nav_files/saved_resource(3).html"></iframe>
+
+
+
+<script id="vocabla-script" src="chrome-extension://bchnamjcpocgphheheekmchilaabjdnb/page_script.js"></script><iframe id="ssIFrame_google" sandbox="allow-scripts allow-same-origin" aria-hidden="true" frame-border="0" src="./toggle nav_files/iframe.html" style="position: absolute; width: 1px; height: 1px; left: -9999px; top: -9999px; right: -9999px; bottom: -9999px; display: none;"></iframe><iframe id="google_osd_static_frame_9276632918551" name="google_osd_static_frame" style="display: none; width: 0px; height: 0px;" src="./toggle nav_files/saved_resource(4).html"></iframe><span id="vocabla-span"><div id="vocabla-translationsPopup" style="display: none;"></div><div id="vocabla-analytics-iframes"><iframe class="loaded" src="./toggle nav_files/doubleclick.html"></iframe></div></span></body></html>
